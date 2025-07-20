@@ -38,8 +38,12 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Company Info */}
             <div className="lg:col-span-1">
-              <div className="font-poppins font-bold text-2xl mb-4">
-                AURORA TECH
+              <div className="mb-4">
+                <img 
+                  src="/lovable-uploads/4bd2af73-1cd4-4c48-a722-bf20d98f8b92.png" 
+                  alt="Aurora Tech Logo" 
+                  className="h-16 w-auto filter brightness-0 invert"
+                />
               </div>
               <p className="text-primary-foreground/80 mb-6 leading-relaxed">
                 L'intelligence au cœur de chaque création. Propulsons la transformation digitale de l'Afrique grâce à des solutions IA innovantes.

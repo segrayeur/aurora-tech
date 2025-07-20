@@ -18,8 +18,12 @@ const Header = () => {
       <div className="container-custom">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="font-poppins font-bold text-2xl gradient-text">
-            AURORA TECH
+          <div className="flex items-center">
+            <img 
+              src="/lovable-uploads/4bd2af73-1cd4-4c48-a722-bf20d98f8b92.png" 
+              alt="Aurora Tech Logo" 
+              className="h-12 w-auto"
+            />
           </div>
 
           {/* Desktop Navigation */}
