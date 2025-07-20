@@ -20,6 +20,15 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 container-custom text-center text-white">
         <div className="max-w-4xl mx-auto">
+          {/* Logo avec animation zoom */}
+          <div className="mb-8">
+            <img 
+              src="/lovable-uploads/4bd2af73-1cd4-4c48-a722-bf20d98f8b92.png" 
+              alt="Aurora Tech Logo" 
+              className="h-24 w-auto mx-auto animate-zoom-pulse filter brightness-0 invert"
+            />
+          </div>
+          
           <h1 className="font-poppins text-5xl md:text-7xl font-bold mb-6 leading-tight">
             AURORA TECH
           </h1>
