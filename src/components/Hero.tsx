@@ -1,0 +1,64 @@
+import { Button } from '@/components/ui/button';
+import heroBanner from '@/assets/hero-banner.jpg';
+
+const Hero = () => {
+  return (
+    <section id="accueil" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 z-0"
+        style={{
+          backgroundImage: `url(${heroBanner})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-accent/80"></div>
+      </div>
+
+      {/* Content */}
+      <div className="relative z-10 container-custom text-center text-white">
+        <div className="max-w-4xl mx-auto">
+          <h1 className="font-poppins text-5xl md:text-7xl font-bold mb-6 leading-tight">
+            AURORA TECH
+          </h1>
+          <p className="text-xl md:text-2xl font-light mb-4 opacity-90">
+            L'intelligence au cœur de chaque création
+          </p>
+          
+          <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
+          
+          <p className="text-lg md:text-xl mb-12 max-w-2xl mx-auto leading-relaxed">
+            Propulsons la transformation digitale de l'Afrique grâce à des solutions IA innovantes.
+          </p>
+
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Button 
+              size="lg"
+              className="bg-white/20 text-white border border-white/30 hover:bg-white/30 backdrop-blur-sm font-semibold px-8 py-4 text-lg"
+            >
+              Découvrir Nos Solutions
+            </Button>
+            <Button 
+              size="lg"
+              className="bg-accent hover:bg-accent/90 text-white font-semibold px-8 py-4 text-lg"
+            >
+              Nous Contacter
+            </Button>
+          </div>
+        </div>
+
+        {/* Scroll Indicator */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+          <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center">
+            <div className="w-1 h-3 bg-white/70 rounded-full mt-2 animate-pulse"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;
