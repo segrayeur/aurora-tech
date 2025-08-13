@@ -1,16 +1,18 @@
 import { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
   const menuItems = [
-    { label: 'Accueil', href: '#accueil' },
-    { label: 'À Propos', href: '#apropos' },
-    { label: 'Services', href: '#services' },
-    { label: 'Produits', href: '#produits' },
-    { label: 'Contact', href: '#contact' },
+    { label: 'Accueil', href: '/' },
+    { label: 'À Propos', href: '/about' },
+    { label: 'Services', href: '/services' },
+    { label: 'Produits', href: '/products' },
+    { label: 'Contact', href: '/contact' },
   ];
 
   return (
@@ -18,30 +20,30 @@ const Header = () => {
       <div className="container-custom">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center">
+          <Link to="/" className="flex items-center">
             <img 
               src="/lovable-uploads/4bd2af73-1cd4-4c48-a722-bf20d98f8b92.png" 
               alt="Aurora Tech Logo" 
               className="h-12 w-auto"
             />
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             {menuItems.map((item) => (
-              <a
+              <Link
                 key={item.label}
-                href={item.href}
+                to={item.href}
                 className="text-foreground hover:text-accent transition-colors font-medium"
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
           </nav>
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button className="btn-hero">
+            <Button className="btn-hero" onClick={() => navigate('/contact')}>
               Nous Contacter
             </Button>
           </div>
@@ -60,16 +62,19 @@ const Header = () => {
           <div className="md:hidden py-4 border-t border-border">
             <nav className="flex flex-col space-y-4">
               {menuItems.map((item) => (
-                <a
+                <Link
                   key={item.label}
-                  href={item.href}
+                  to={item.href}
                   className="text-foreground hover:text-accent transition-colors font-medium py-2"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.label}
-                </a>
+                </Link>
               ))}
-              <Button className="btn-hero mt-4">
+              <Button className="btn-hero mt-4" onClick={() => {
+                navigate('/contact');
+                setIsMenuOpen(false);
+              }}>
                 Nous Contacter
               </Button>
             </nav>

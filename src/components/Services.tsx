@@ -1,8 +1,11 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import { useNavigate } from 'react-router-dom';
 import { Globe, FileText, Smartphone, Monitor, Palette, Camera, Bot } from 'lucide-react';
 
 const Services = () => {
+  const navigate = useNavigate();
+  
   const services = [
     {
       icon: <Globe className="w-8 h-8" />,
@@ -88,7 +91,11 @@ const Services = () => {
                   <span className="text-sm text-muted-foreground ml-2">{service.target}</span>
                 </div>
                 
-                <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                <Button 
+                  variant="outline" 
+                  className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors"
+                  onClick={() => navigate('/services')}
+                >
                   En savoir plus
                 </Button>
               </CardContent>
@@ -147,7 +154,7 @@ const Services = () => {
             <p className="text-xl font-poppins font-semibold gradient-text mb-6">
               "Une solution complète où l'intelligence relie chaque outil."
             </p>
-            <Button className="btn-hero">
+            <Button className="btn-hero" onClick={() => navigate('/ecosystem')}>
               Voir l'Écosystème
             </Button>
           </div>

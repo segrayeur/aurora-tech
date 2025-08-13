@@ -1,26 +1,27 @@
+import { Link } from 'react-router-dom';
 import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
 
 const Footer = () => {
   const quickLinks = [
-    { label: 'Accueil', href: '#accueil' },
-    { label: 'À Propos', href: '#apropos' },
-    { label: 'Services', href: '#services' },
-    { label: 'Produits', href: '#produits' },
-    { label: 'Contact', href: '#contact' },
+    { label: 'Accueil', href: '/' },
+    { label: 'À Propos', href: '/about' },
+    { label: 'Services', href: '/services' },
+    { label: 'Produits', href: '/products' },
+    { label: 'Contact', href: '/contact' },
   ];
 
   const products = [
-    { label: 'WEÏLI', href: '#weili' },
-    { label: 'FileCed', href: '#fileced' },
-    { label: 'Aurora Share', href: '#aurora-share' },
-    { label: 'Byan', href: '#byan' },
+    { label: 'WEÏLI', href: '/products' },
+    { label: 'FileCed', href: '/products' },
+    { label: 'Aurora Share', href: '/products' },
+    { label: 'Byan', href: '/products' },
   ];
 
   const services = [
-    { label: 'Sites Web', href: '#sites-web' },
-    { label: 'Apps Mobile', href: '#apps-mobile' },
-    { label: 'Design Graphique', href: '#design' },
-    { label: 'IA & Automatisation', href: '#ia' },
+    { label: 'Sites Web', href: '/services' },
+    { label: 'Apps Mobile', href: '/services' },
+    { label: 'Design Graphique', href: '/services' },
+    { label: 'IA & Automatisation', href: '/services' },
   ];
 
   const socialLinks = [
@@ -74,12 +75,12 @@ const Footer = () => {
               <ul className="space-y-2">
                 {quickLinks.map((link) => (
                   <li key={link.label}>
-                    <a 
-                      href={link.href}
+                    <Link 
+                      to={link.href}
                       className="text-primary-foreground/80 hover:text-accent transition-colors text-sm"
                     >
                       {link.label}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -93,12 +94,12 @@ const Footer = () => {
               <ul className="space-y-2">
                 {products.map((product) => (
                   <li key={product.label}>
-                    <a 
-                      href={product.href}
+                    <Link 
+                      to={product.href}
                       className="text-primary-foreground/80 hover:text-accent transition-colors text-sm"
                     >
                       {product.label}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -112,12 +113,12 @@ const Footer = () => {
               <ul className="space-y-2">
                 {services.map((service) => (
                   <li key={service.label}>
-                    <a 
-                      href={service.href}
+                    <Link 
+                      to={service.href}
                       className="text-primary-foreground/80 hover:text-accent transition-colors text-sm"
                     >
                       {service.label}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
