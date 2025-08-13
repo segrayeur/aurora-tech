@@ -9,14 +9,24 @@ import Footer from '@/components/Footer';
 
 const Index = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen african-pattern">
       <Header />
       <Hero />
-      <ProductShowcase />
-      <About />
-      <Services />
-      <Testimonial />
-      <Contact />
+      <div className="fade-in-up stagger-1">
+        <ProductShowcase />
+      </div>
+      <div className="fade-in-left stagger-2">
+        <About />
+      </div>
+      <div className="fade-in-right stagger-3">
+        <Services />
+      </div>
+      <div className="fade-in-up stagger-4">
+        <Testimonial />
+      </div>
+      <div className="fade-in-up stagger-5">
+        <Contact />
+      </div>
       <Footer />
     </div>
   );

@@ -8,11 +8,12 @@
 
 @layer base {
   :root {
-    /* Brand Colors */
-    --tech-blue: 223 84% 20%;        /* #0A2463 */
-    --energy-orange: 16 100% 60%;    /* #FF6B35 */
-    --tech-blue-light: 223 54% 35%;
-    --energy-orange-light: 16 85% 75%;
+    /* Traditional African Colors */
+    --african-terracotta: 16 85% 45%;      /* #C8622D - Terre cuite africaine */
+    --african-gold: 45 95% 55%;            /* #E6B454 - Or africain */
+    --african-earth: 30 60% 35%;           /* #8B5A2B - Terre d'Afrique */
+    --african-green: 120 40% 30%;          /* #4D8B4D - Vert baobab */
+    --african-sunset: 25 90% 55%;          /* #E67E22 - Coucher de soleil */ 
     
     /* Design System Colors */
     --background: 0 0% 98%;
@@ -24,32 +25,33 @@
     --popover: 0 0% 100%;
     --popover-foreground: 223 84% 15%;
 
-    --primary: 223 84% 20%;           /* Tech Blue */
+    --primary: 16 85% 45%;            /* African Terracotta */
     --primary-foreground: 0 0% 98%;
 
-    --secondary: 223 15% 95%;
-    --secondary-foreground: 223 84% 20%;
+    --secondary: 30 60% 90%;          /* Light earth tone */
+    --secondary-foreground: 30 60% 35%;
 
-    --muted: 223 15% 95%;
-    --muted-foreground: 223 20% 50%;
+    --muted: 30 30% 92%;
+    --muted-foreground: 30 40% 45%;
 
-    --accent: 16 100% 60%;            /* Energy Orange */
-    --accent-foreground: 0 0% 98%;
+    --accent: 45 95% 55%;             /* African Gold */
+    --accent-foreground: 30 60% 15%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
     --border: 223 20% 88%;
     --input: 223 20% 90%;
-    --ring: 223 84% 20%;
+    --ring: 16 85% 45%;
     
-    /* Custom Design Tokens */
-    --gradient-primary: linear-gradient(135deg, hsl(var(--tech-blue)), hsl(var(--tech-blue-light)));
-    --gradient-accent: linear-gradient(135deg, hsl(var(--energy-orange)), hsl(var(--energy-orange-light)));
-    --gradient-hero: linear-gradient(135deg, hsl(var(--tech-blue)) 0%, hsl(var(--energy-orange)) 100%);
+    /* African Design Tokens */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--african-terracotta)), hsl(var(--african-earth)));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--african-gold)), hsl(var(--african-sunset)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--african-terracotta)) 0%, hsl(var(--african-gold)) 100%);
+    --gradient-african: linear-gradient(45deg, hsl(var(--african-terracotta)), hsl(var(--african-gold)), hsl(var(--african-green)));
     
-    --shadow-tech: 0 10px 40px -15px hsl(var(--tech-blue) / 0.3);
-    --shadow-glow: 0 0 30px hsl(var(--energy-orange) / 0.2);
+    --shadow-african: 0 10px 40px -15px hsl(var(--african-terracotta) / 0.4);
+    --shadow-golden: 0 0 30px hsl(var(--african-gold) / 0.3);
     
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -133,11 +135,11 @@
   }
 
   .tech-shadow {
-    box-shadow: var(--shadow-tech);
+    box-shadow: var(--shadow-african);
   }
 
   .glow-effect {
-    box-shadow: var(--shadow-glow);
+    box-shadow: var(--shadow-golden);
   }
 
   .btn-hero {
@@ -150,5 +152,94 @@
 
   .container-custom {
     @apply max-w-7xl mx-auto;
+  }
+
+  /* African Animation Classes */
+  .fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+
+  .fade-in-left {
+    opacity: 0;
+    transform: translateX(-30px);
+    animation: fadeInLeft 0.8s ease-out forwards;
+  }
+
+  .fade-in-right {
+    opacity: 0;
+    transform: translateX(30px);
+    animation: fadeInRight 0.8s ease-out forwards;
+  }
+
+  .stagger-1 { animation-delay: 0.1s; }
+  .stagger-2 { animation-delay: 0.2s; }
+  .stagger-3 { animation-delay: 0.3s; }
+  .stagger-4 { animation-delay: 0.4s; }
+  .stagger-5 { animation-delay: 0.5s; }
+
+  /* African Pattern Background */
+  .african-pattern {
+    position: relative;
+  }
+
+  .african-pattern::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+      radial-gradient(circle at 20% 50%, hsl(var(--african-gold) / 0.1) 1px, transparent 1px),
+      radial-gradient(circle at 80% 50%, hsl(var(--african-terracotta) / 0.1) 1px, transparent 1px);
+    background-size: 60px 60px, 80px 80px;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* Floating Animation */
+  .float-animation {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .pulse-golden {
+    animation: pulseGolden 2s ease-in-out infinite;
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulseGolden {
+  0%, 100% { 
+    box-shadow: 0 0 20px hsl(var(--african-gold) / 0.4);
+  }
+  50% { 
+    box-shadow: 0 0 40px hsl(var(--african-gold) / 0.6);
   }
 }

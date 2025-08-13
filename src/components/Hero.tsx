@@ -25,7 +25,7 @@ const Hero = () => {
             <img 
               src="/lovable-uploads/4bd2af73-1cd4-4c48-a722-bf20d98f8b92.png" 
               alt="Aurora Tech Logo" 
-              className="h-32 w-auto mx-auto animate-zoom-pulse drop-shadow-lg"
+              className="h-32 w-auto mx-auto animate-zoom-pulse drop-shadow-lg float-animation pulse-golden"
             />
           </div>
           
