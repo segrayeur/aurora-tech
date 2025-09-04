@@ -6,28 +6,21 @@ const Services = () => {
   const services = [
     {
       icon: <Globe className="w-8 h-8" />,
-      domain: "Sites Web",
+      domain: "Développement Web",
       description: "Création de sites vitrines/e-commerce performants.",
       target: "PME, Startups",
       color: "from-blue-500 to-cyan-500"
     },
     {
-      icon: <FileText className="w-8 h-8" />,
-      domain: "Factures Proforma",
-      description: "Génération automatisée de documents professionnels.",
-      target: "TPE, Commerces",
-      color: "from-green-500 to-emerald-500"
-    },
-    {
       icon: <Smartphone className="w-8 h-8" />,
-      domain: "Apps Web/Mobile",
+      domain: "Applications/SaaS",
       description: "Développement d'applications personnalisées (iOS, Android, Web).",
       target: "Startups, Grandes entreprises",
       color: "from-purple-500 to-violet-500"
     },
     {
       icon: <Monitor className="w-8 h-8" />,
-      domain: "Logiciels Sur Mesure",
+      domain: "Logiciels Web/Mobile",
       description: "Solutions logicielles adaptées à vos processus métiers.",
       target: "Administrations, Écoles",
       color: "from-orange-500 to-amber-500"
@@ -40,18 +33,18 @@ const Services = () => {
       color: "from-pink-500 to-rose-500"
     },
     {
-      icon: <Camera className="w-8 h-8" />,
-      domain: "Photo & Vidéo",
-      description: "Services professionnels de photographie et montage vidéo.",
-      target: "Événements, Campagnes marketing",
-      color: "from-indigo-500 to-blue-500"
+      icon: <FileText className="w-8 h-8" />,
+      domain: "Factures Proforma",
+      description: "Génération automatisée de documents professionnels.",
+      target: "TPE, Commerces",
+      color: "from-green-500 to-emerald-500"
     },
     {
-      icon: <Bot className="w-8 h-8" />,
-      domain: "IA & Automatisation",
-      description: "Solutions d'intelligence artificielle pour optimiser vos tâches.",
-      target: "Grandes entreprises, Industrie",
-      color: "from-red-500 to-orange-500"
+      icon: <Camera className="w-8 h-8" />,
+      domain: "Montage Vidéo",
+      description: "Services professionnels de montage vidéo et post-production.",
+      target: "Événements, Campagnes marketing",
+      color: "from-indigo-500 to-blue-500"
     }
   ];
 
@@ -137,7 +130,7 @@ const Services = () => {
               </div>
               <div className="text-accent font-bold text-2xl">↓</div>
               <div className="bg-white rounded-xl p-6 tech-shadow mt-4">
-                <p className="font-semibold text-accent">Partagez via Aurora Share</p>
+                <p className="font-semibold text-accent">Trouvez des jobs via QuickJob CI</p>
                 <p className="text-sm text-muted-foreground">(Produit)</p>
               </div>
             </div>

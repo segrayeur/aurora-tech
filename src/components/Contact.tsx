@@ -17,7 +17,7 @@ const Contact = () => {
     {
       icon: <Phone className="w-6 h-6" />,
       title: "Téléphone",
-      info: "+225 05 65 86 87 86",
+      info: "+225 0665868786",
       subtitle: "Disponible 24h/7j"
     },
     {
@@ -29,17 +29,15 @@ const Contact = () => {
   ];
 
   const services = [
-    "Sites Web",
-    "Factures Proforma", 
-    "Apps Web/Mobile",
-    "Logiciels Sur Mesure",
+    "Développement Web",
+    "Applications/SaaS", 
+    "Logiciels Web/Mobile",
     "Design Graphique",
-    "Photo & Vidéo",
-    "IA & Automatisation",
+    "Factures Proforma",
+    "Montage Vidéo",
     "Produit WEÏLI",
     "Produit FileCed",
-    "Produit Aurora Share",
-    "Produit Byan"
+    "Produit QuickJob CI"
   ];
 
   return (

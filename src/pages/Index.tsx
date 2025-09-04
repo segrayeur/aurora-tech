@@ -6,6 +6,8 @@ import Services from '@/components/Services';
 import Testimonial from '@/components/Testimonial';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
+import FloatingButtons from '@/components/FloatingButtons';
+import SocialLinks from '@/components/SocialLinks';
 
 const Index = () => {
   return (
@@ -28,6 +30,7 @@ const Index = () => {
         <Contact />
       </div>
       <Footer />
+      <FloatingButtons />
     </div>
   );
 };

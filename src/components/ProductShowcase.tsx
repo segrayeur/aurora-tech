@@ -7,26 +7,20 @@ const ProductShowcase = () => {
     {
       icon: <BarChart3 className="w-8 h-8" />,
       name: "WEÏLI",
-      description: "La plateforme de vente en ligne gratuite",
+      description: "Outil de gestion et organisation intelligente",
       color: "from-african-terracotta to-african-earth"
     },
     {
       icon: <FolderOpen className="w-8 h-8" />,
       name: "FileCed",
-      description: "Stockage cloud optimisé par IA",
+      description: "Application de sauvegarde en ligne",
       color: "from-african-green to-african-earth"
     },
     {
-      icon: <Share2 className="w-8 h-8" />,
-      name: "Aurora Share",
-      description: "Le partage à la vitesse de l'intelligence",
-      color: "from-african-gold to-african-sunset"
-    },
-    {
       icon: <Bot className="w-8 h-8" />,
-      name: "Byan",
-      description: "Booste et création digitale",
-      color: "from-african-sunset to-african-terracotta"
+      name: "QuickJob CI",
+      description: "La plateforme qui connecte les jeunes aux opportunités de petits boulots",
+      color: "from-african-gold to-african-sunset"
     }
   ];
 
@@ -42,11 +36,11 @@ const ProductShowcase = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {products.map((product, index) => (
-            <Card key={index} className={`group hover:scale-105 transition-all duration-500 tech-shadow hover:glow-effect border-0 bg-white fade-in-up stagger-${(index % 4) + 1} animate-rotate-gentle`}>
+            <Card key={index} className={`group card-hover-3d transition-all duration-500 tech-shadow hover:glow-effect border-0 bg-white fade-in-up stagger-${(index % 3) + 1} spectacular-zoom`}>
               <CardContent className="p-8 text-center">
-                <div className={`inline-flex p-4 rounded-full bg-gradient-to-r ${product.color} text-white mb-4 group-hover:scale-110 transition-transform duration-300 float-animation pulse-golden`}>
+                <div className={`inline-flex p-4 rounded-full bg-gradient-to-r ${product.color} text-white mb-4 group-hover:scale-110 transition-transform duration-300 float-magic neon-glow`}>
                   {product.icon}
                 </div>
                 <h3 className="font-poppins text-xl font-bold mb-3 text-primary">

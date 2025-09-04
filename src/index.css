@@ -6,6 +6,39 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Open+Sans:wght@300;400;500;600&display=swap');
 
+/* Spectacular Aurora Tech Animation System */
+@keyframes neonGlow {
+  0%, 100% { box-shadow: 0 0 20px hsl(var(--african-gold) / 0.3), 0 0 40px hsl(var(--african-gold) / 0.2); }
+  50% { box-shadow: 0 0 30px hsl(var(--african-gold) / 0.5), 0 0 60px hsl(var(--african-gold) / 0.3), 0 0 80px hsl(var(--african-gold) / 0.1); }
+}
+
+@keyframes spectacularZoom {
+  0%, 100% { transform: scale(1) rotate(0deg); }
+  25% { transform: scale(1.05) rotate(1deg); }
+  75% { transform: scale(1.02) rotate(-1deg); }
+}
+
+@keyframes floatMagic {
+  0%, 100% { transform: translateY(0px) translateX(0px); }
+  33% { transform: translateY(-15px) translateX(5px); }
+  66% { transform: translateY(-5px) translateX(-5px); }
+}
+
+@keyframes textShimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+@keyframes cardHover {
+  0% { transform: translateY(0) rotateX(0) rotateY(0); }
+  100% { transform: translateY(-10px) rotateX(5deg) rotateY(5deg); }
+}
+
+@keyframes bubbleFloat {
+  0%, 100% { transform: translateY(0px) scale(1); }
+  50% { transform: translateY(-20px) scale(1.1); }
+}
+
 @layer base {
   :root {
     /* Traditional African Colors */
@@ -206,6 +239,68 @@
 
   .pulse-golden {
     animation: pulseGolden 2s ease-in-out infinite;
+  }
+
+  /* Spectacular Animation Classes */
+  .neon-glow {
+    animation: neonGlow 3s ease-in-out infinite;
+  }
+
+  .spectacular-zoom {
+    animation: spectacularZoom 4s ease-in-out infinite;
+  }
+
+  .float-magic {
+    animation: floatMagic 6s ease-in-out infinite;
+  }
+
+  .text-shimmer {
+    background: linear-gradient(90deg, hsl(var(--primary)), hsl(var(--accent)), hsl(var(--primary)));
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textShimmer 3s linear infinite;
+  }
+
+  .card-hover-3d {
+    transition: all 0.3s ease;
+    transform-style: preserve-3d;
+  }
+
+  .card-hover-3d:hover {
+    animation: cardHover 0.6s ease-out forwards;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  }
+
+  .bubble-float {
+    animation: bubbleFloat 4s ease-in-out infinite;
+  }
+
+  /* Glassmorphism Effect */
+  .glass-effect {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  /* Professional Photo Frame */
+  .professional-frame {
+    position: relative;
+    display: inline-block;
+  }
+
+  .professional-frame::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    background: linear-gradient(45deg, hsl(var(--african-gold)), hsl(var(--african-terracotta)), hsl(var(--african-gold)));
+    border-radius: 50%;
+    z-index: -1;
+    animation: neonGlow 3s ease-in-out infinite;
   }
 }
 

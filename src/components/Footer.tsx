@@ -12,15 +12,14 @@ const Footer = () => {
   const products = [
     { label: 'WEÏLI', href: '#weili' },
     { label: 'FileCed', href: '#fileced' },
-    { label: 'Aurora Share', href: '#aurora-share' },
-    { label: 'Byan', href: '#byan' },
+    { label: 'QuickJob CI', href: '#quickjob' },
   ];
 
   const services = [
-    { label: 'Sites Web', href: '#sites-web' },
-    { label: 'Apps Mobile', href: '#apps-mobile' },
+    { label: 'Développement Web', href: '#sites-web' },
+    { label: 'Apps/SaaS', href: '#apps-mobile' },
     { label: 'Design Graphique', href: '#design' },
-    { label: 'IA & Automatisation', href: '#ia' },
+    { label: 'Montage Vidéo', href: '#video' },
   ];
 
   const socialLinks = [
@@ -57,7 +56,7 @@ const Footer = () => {
                 </div>
                 <div className="flex items-center gap-3">
                   <Phone className="w-4 h-4 text-accent" />
-                  <span className="text-sm">+225 05 65 86 87 86</span>
+                  <span className="text-sm">+225 0665868786</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Mail className="w-4 h-4 text-accent" />
@@ -130,7 +129,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             {/* Copyright */}
             <div className="text-primary-foreground/60 text-sm">
-              © 2024 Aurora Tech. Tous droits réservés. Fondé par Kouassi Cédric Junior.
+              © 2024 Aurora Tech. Tous droits réservés. Fondé par KOUASSI JEAN PAUL CEDRIC J (SEGRAYEUR).
             </div>
 
             {/* Social Links */}
