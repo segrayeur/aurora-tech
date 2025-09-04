@@ -45,7 +45,7 @@ const Contact = () => {
       <div className="container-custom">
         <div className="text-center mb-16">
           <h2 className="font-poppins text-4xl md:text-5xl font-bold gradient-text mb-4">
-            Collaborons ensemble !
+            Contactez-nous
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Discutons de votre projet pour une solution sur mesure.

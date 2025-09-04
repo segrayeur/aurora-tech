@@ -31,12 +31,12 @@ const Hero = () => {
           {/* Professional Photo + Logo */}
           <div className="mb-8 flex flex-col items-center gap-6">
             <div className="professional-frame">
-              <img src="/lovable-uploads/58b81631-dcfa-4f5b-85da-9960e49b229d.png" alt="Kouassi Jean Paul Cédric J (Segrayeur) - Fondateur Aurora Tech" className="h-24 w-24 rounded-full object-cover spectacular-zoom" />
+              <img src="/lovable-uploads/58b81631-dcfa-4f5b-85da-9960e49b229d.png" alt="Kouassi Jean Paul Cédric J – Fondateur Aurora Tech" className="h-24 w-24 rounded-full object-cover spectacular-zoom" />
             </div>
-            <img src="/lovable-uploads/6990da45-816f-46d1-ae3f-7066b8eb9af7.png" alt="Aurora Tech Logo" className="h-28 w-auto mx-auto float-magic neon-glow" />
+            <img src="/lovable-uploads/6990da45-816f-46d1-ae3f-7066b8eb9af7.png" alt="Logo Aurora Tech – Solutions numériques en Côte d'Ivoire" className="h-28 w-auto mx-auto float-magic neon-glow" />
           </div>
           
-          <h1 className="font-poppins text-5xl md:text-7xl font-bold mb-6 leading-tight text-shimmer">Aurora Tech africa – Solutions numériques innovantes en Côte d'Ivoire</h1>
+          <h1 className="font-poppins text-5xl md:text-7xl font-bold mb-6 leading-tight text-shimmer">Aurora Tech – Solutions numériques innovantes en Côte d'Ivoire</h1>
           <p className="text-xl md:text-2xl font-light mb-4 opacity-90 float-animation">
             L'intelligence au cœur de chaque création
           </p>
