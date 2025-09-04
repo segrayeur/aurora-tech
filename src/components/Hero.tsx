@@ -1,10 +1,7 @@
 import { Button } from '@/components/ui/button';
-import { useNavigate } from 'react-router-dom';
 import heroBanner from '@/assets/hero-banner.jpg';
 
 const Hero = () => {
-  const navigate = useNavigate();
-  
   return (
     <section id="accueil" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
@@ -50,14 +47,12 @@ const Hero = () => {
             <Button 
               size="lg"
               className="bg-white/20 text-white border border-white/30 hover:bg-white/30 backdrop-blur-sm font-semibold px-8 py-4 text-lg"
-              onClick={() => navigate('/services')}
             >
               Découvrir Nos Solutions
             </Button>
             <Button 
               size="lg"
               className="bg-accent hover:bg-accent/90 text-white font-semibold px-8 py-4 text-lg"
-              onClick={() => navigate('/contact')}
             >
               Nous Contacter
             </Button>

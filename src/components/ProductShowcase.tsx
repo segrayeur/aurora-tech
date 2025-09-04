@@ -1,11 +1,8 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { useNavigate } from 'react-router-dom';
 import { BarChart3, FolderOpen, Share2, Bot } from 'lucide-react';
 
 const ProductShowcase = () => {
-  const navigate = useNavigate();
-  
   const products = [
     {
       icon: <BarChart3 className="w-8 h-8" />,
@@ -58,11 +55,7 @@ const ProductShowcase = () => {
                 <p className="text-muted-foreground mb-6 leading-relaxed">
                   {product.description}
                 </p>
-                <Button 
-                  variant="outline" 
-                  className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors animate-slide-in-bottom"
-                  onClick={() => navigate('/products')}
-                >
+                <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors animate-slide-in-bottom">
                   Découvrir
                 </Button>
               </CardContent>
@@ -79,7 +72,7 @@ const ProductShowcase = () => {
               Aurora Tech est une entreprise ivoirienne spécialisée dans le développement de solutions digitales intelligentes. 
               Fondée par Kouassi Cédric Junior, nous combinons expertise technique et innovation pour répondre aux défis de la digitalisation en Afrique.
             </p>
-            <Button className="btn-hero animate-slide-in-bottom" onClick={() => navigate('/products')}>
+            <Button className="btn-hero animate-slide-in-bottom">
               Voir Tous Nos Produits
             </Button>
           </div>
