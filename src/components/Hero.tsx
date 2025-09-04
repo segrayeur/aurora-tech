@@ -38,13 +38,13 @@ const Hero = () => {
           
           <h1 className="font-poppins text-5xl md:text-7xl font-bold mb-6 leading-tight text-shimmer">Aurora Tech – Solutions numériques innovantes en Côte d'Ivoire</h1>
           <p className="text-xl md:text-2xl font-light mb-4 opacity-90 float-animation">
-            L'intelligence au cœur de chaque création
+            Devenir un acteur majeur de la transformation digitale en Afrique grâce au numérique
           </p>
           
           <div className="w-24 h-1 bg-gradient-to-r from-accent to-primary mx-auto mb-8 neon-glow"></div>
           
           <p className="text-lg md:text-xl mb-6 max-w-2xl mx-auto leading-relaxed">
-            Devenir un acteur majeur de la transformation numérique en Afrique grâce aux solutions numériques innovantes.
+            Aurora Tech Africa propose des solutions numériques innovantes : développement web, applications mobiles et logiciels sur mesure pour transformer le digital en Afrique.
           </p>
           
           <p className="text-sm md:text-base mb-12 opacity-80">

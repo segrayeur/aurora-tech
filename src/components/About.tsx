@@ -38,8 +38,14 @@ const About = () => {
                 
                 <div>
                   <h3 className="text-xl font-semibold text-foreground mb-3">Notre Fondateur</h3>
+                  <p className="mb-3">
+                    <strong>KOUASSI JEAN PAUL CEDRIC J</strong>, connu sous le pseudonyme <strong>SEGRAYEUR</strong>, est un entrepreneur passionné de technologie.
+                  </p>
+                  <p className="text-accent font-semibold mb-3">
+                    Gen IA | Webdesigner | Développeur Web/Mobile | Développeur Windev
+                  </p>
                   <p>
-                    <strong>KOUASSI JEAN PAUL CEDRIC J</strong>, connu sous le pseudonyme <strong>SEGRAYEUR</strong>, est un entrepreneur passionné de technologie. Diplômé en informatique et fort de plusieurs années d'expérience en développement, il a fondé Aurora Tech avec la vision de propulser l'écosystème numérique ivoirien.
+                    Expert en solutions numériques, spécialisé dans le développement web, mobile, logiciels bureau, Windev, Python, Java et applications natives. Il a fondé Aurora Tech avec la vision de propulser l'écosystème numérique ivoirien.
                   </p>
                 </div>
                 

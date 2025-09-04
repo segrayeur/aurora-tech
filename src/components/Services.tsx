@@ -1,6 +1,6 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Globe, FileText, Smartphone, Monitor, Palette, Camera, Bot } from 'lucide-react';
+import { Globe, FileText, Smartphone, Monitor, Palette, Camera, Bot, Brain, BookOpen, Settings } from 'lucide-react';
 
 const Services = () => {
   const services = [
@@ -45,6 +45,27 @@ const Services = () => {
       description: "Services professionnels de montage vidéo et post-production.",
       target: "Événements, Campagnes marketing",
       color: "from-indigo-500 to-blue-500"
+    },
+    {
+      icon: <Brain className="w-8 h-8" />,
+      domain: "Formation en IA",
+      description: "Formations en intelligence artificielle pour débutants et professionnels.",
+      target: "Étudiants, Professionnels",
+      color: "from-violet-500 to-purple-500"
+    },
+    {
+      icon: <BookOpen className="w-8 h-8" />,
+      domain: "Formation Pack Office",
+      description: "Formations complètes en Word, Excel, PowerPoint et outils bureautiques.",
+      target: "Entreprises, Particuliers",
+      color: "from-teal-500 to-cyan-500"
+    },
+    {
+      icon: <Settings className="w-8 h-8" />,
+      domain: "Installation Système",
+      description: "Installation et configuration de systèmes Windows et logiciels.",
+      target: "Entreprises, Particuliers",
+      color: "from-gray-500 to-slate-500"
     }
   ];
 

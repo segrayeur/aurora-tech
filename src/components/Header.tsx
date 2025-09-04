@@ -11,6 +11,7 @@ const Header = () => {
     { label: 'Services', href: '#services' },
     { label: 'Produits', href: '#produits' },
     { label: 'Contact', href: '#contact' },
+    { label: 'FAQ', href: '#faq' },
   ];
 
   return (
@@ -21,7 +22,7 @@ const Header = () => {
           <div className="flex items-center">
             <img 
               src="/lovable-uploads/8715abee-8d22-4b7c-a3da-851b45b46273.png" 
-              alt="Aurora Tech Logo" 
+              alt="Logo Aurora Tech – Solutions numériques en Côte d'Ivoire" 
               className="h-12 w-auto"
             />
           </div>

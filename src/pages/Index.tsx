@@ -5,6 +5,7 @@ import About from '@/components/About';
 import Services from '@/components/Services';
 import Testimonial from '@/components/Testimonial';
 import Contact from '@/components/Contact';
+import FAQ from '@/components/FAQ';
 import Footer from '@/components/Footer';
 import FloatingButtons from '@/components/FloatingButtons';
 import SocialLinks from '@/components/SocialLinks';
@@ -28,6 +29,9 @@ const Index = () => {
       </div>
       <div className="fade-in-up stagger-5">
         <Contact />
+      </div>
+      <div className="fade-in-up stagger-6">
+        <FAQ />
       </div>
       <Footer />
       <FloatingButtons />

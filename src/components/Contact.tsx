@@ -35,6 +35,9 @@ const Contact = () => {
     "Design Graphique",
     "Factures Proforma",
     "Montage Vidéo",
+    "Formation en IA",
+    "Formation Pack Office",
+    "Installation Système Windows",
     "Produit WEÏLI",
     "Produit FileCed",
     "Produit QuickJob CI"
