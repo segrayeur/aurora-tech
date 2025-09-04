@@ -62,11 +62,19 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-white/70 rounded-full mt-2 animate-pulse"></div>
+        {/* Professional Quote */}
+        <div className="absolute top-1/2 left-8 transform -translate-y-1/2 hidden lg:flex items-center gap-4 max-w-sm">
+          <div className="professional-frame">
+            <img src="/lovable-uploads/58b81631-dcfa-4f5b-85da-9960e49b229d.png" alt="Kouassi Jean Paul Cédric J (Segrayeur)" className="h-16 w-16 rounded-full object-cover spectacular-zoom" />
           </div>
+          <div className="text-white/90 italic text-sm font-medium">
+            "Seul l'effort révèle les véritables compétences des hommes."
+          </div>
+        </div>
+
+        {/* Logo Indicator */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+          <img src="/lovable-uploads/6990da45-816f-46d1-ae3f-7066b8eb9af7.png" alt="Aurora Tech Logo" className="h-12 w-auto neon-glow opacity-80" />
         </div>
       </div>
       </section>

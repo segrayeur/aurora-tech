@@ -17,7 +17,7 @@ const Contact = () => {
     {
       icon: <Phone className="w-6 h-6" />,
       title: "Téléphone",
-      info: "+225 0665868786",
+      info: "+225 0565868786 / +225 0778518902",
       subtitle: "Disponible 24h/7j"
     },
     {
