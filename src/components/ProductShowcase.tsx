@@ -36,11 +36,11 @@ const ProductShowcase = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
           {products.map((product, index) => (
             <Card key={index} className={`group card-hover-3d transition-all duration-500 tech-shadow hover:glow-effect border-0 bg-white fade-in-up stagger-${(index % 3) + 1} spectacular-zoom`}>
               <CardContent className="p-8 text-center">
-                <div className={`inline-flex p-4 rounded-full bg-gradient-to-r ${product.color} text-white mb-4 group-hover:scale-110 transition-transform duration-300 float-magic neon-glow`}>
+                <div className={`inline-flex p-6 rounded-full bg-gradient-to-r ${product.color} text-white mb-4 group-hover:scale-125 transition-transform duration-300 float-magic neon-glow shadow-2xl`}>
                   {product.icon}
                 </div>
                 <h3 className="font-poppins text-xl font-bold mb-3 text-primary">
@@ -77,7 +77,18 @@ const ProductShowcase = () => {
               Aurora Tech est une entreprise ivoirienne spécialisée dans le développement de solutions digitales intelligentes. 
               Fondée par Kouassi Cédric Junior, nous combinons expertise technique et innovation pour répondre aux défis de la digitalisation en Afrique.
             </p>
-            <Button className="btn-hero animate-slide-in-bottom">
+            <Button 
+              className="btn-hero animate-slide-in-bottom"
+              onClick={() => {
+                const element = document.getElementById('produits');
+                if (element) {
+                  element.scrollIntoView({ behavior: 'smooth' });
+                } else {
+                  // Fallback si l'ID n'existe pas
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+              }}
+            >
               Voir Tous Nos Produits
             </Button>
           </div>
