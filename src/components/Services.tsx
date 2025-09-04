@@ -52,11 +52,11 @@ const Services = () => {
     <section id="services" className="section-padding bg-background">
       <div className="container-custom">
         <div className="text-center mb-16">
-          <h2 className="font-poppins text-4xl md:text-5xl font-bold gradient-text mb-4">
-            Nos Solutions Digitales
+          <h2 className="text-4xl font-bold text-foreground mb-6 gradient-text">
+            Nos services numériques
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Des services sur mesure pour chaque étape de votre croissance
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            Aurora Tech propose une gamme complète de services digitaux pour accompagner votre croissance en Côte d'Ivoire. De la conception à la maintenance, nous maîtrisons toute la chaîne de développement numérique.
           </p>
         </div>
 
@@ -91,9 +91,12 @@ const Services = () => {
 
         {/* Integration Section */}
         <div className="bg-gradient-to-r from-primary/10 to-accent/10 rounded-2xl p-8 lg:p-12">
-          <h3 className="font-poppins text-3xl font-bold text-center gradient-text mb-8">
-            Produits & Services Connectés
+          <h3 className="text-3xl font-bold text-center gradient-text mb-4">
+            Nos produits phares : WEÏLI, FileCed, QuickJob CI
           </h3>
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed text-center mb-8">
+            Découvrez nos solutions logicielles innovantes développées en Côte d'Ivoire pour répondre aux défis locaux. Chaque produit illustre notre expertise technique et notre compréhension du marché africain.
+          </p>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
             <div className="text-center">

@@ -5,16 +5,16 @@ import { Helmet } from 'react-helmet';
 const Hero = () => {
   return <>
       <Helmet>
-        <title>Aurora Tech - L'intelligence au cœur de chaque création | Développement Web & Apps Mobile Côte d'Ivoire</title>
-        <meta name="description" content="Aurora Tech, société de développement web et applications mobiles en Côte d'Ivoire. Fondée par Segrayeur (Kouassi Cédric), nous proposons des solutions numériques innovantes en Afrique." />
-        <meta name="keywords" content="développement web, applications mobiles, numérique Afrique, Aurora Tech, Segrayeur, Côte d'Ivoire, solutions digitales, solutions numériques innovantes, WEÏLI, FileCed, QuickJob CI" />
-        <meta property="og:title" content="Aurora Tech - Solutions Numériques Innovantes en Afrique" />
-        <meta property="og:description" content="Propulsons la transformation numérique de l'Afrique grâce aux solutions numériques innovantes. Fondé par Segrayeur." />
+        <title>Aurora Tech – Solutions numériques innovantes en Côte d'Ivoire</title>
+        <meta name="description" content="Aurora Tech, basée à Abidjan, Côte d'Ivoire, propose des solutions numériques innovantes : développement web, applications mobiles et logiciels sur mesure pour transformer le digital en Afrique." />
+        <meta name="keywords" content="solutions numériques Côte d'Ivoire, développement web mobile, logiciels sur mesure Afrique, Aurora Tech, Segrayeur, Abidjan, WEÏLI, FileCed, QuickJob CI" />
+        <meta property="og:title" content="Aurora Tech – Solutions numériques innovantes en Côte d'Ivoire" />
+        <meta property="og:description" content="Transformez votre présence numérique avec Aurora Tech. Développement web, applications mobiles et logiciels personnalisés en Côte d'Ivoire." />
         <meta property="og:image" content="/lovable-uploads/8715abee-8d22-4b7c-a3da-851b45b46273.png" />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://auroratech.lovable.app" />
+        <link rel="canonical" href="https://auroratech.lovable.app/accueil" />
       </Helmet>
-      <section id="accueil" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <main id="accueil" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0" style={{
         backgroundImage: `url(${heroBanner})`,
@@ -31,24 +31,24 @@ const Hero = () => {
           {/* Professional Photo + Logo */}
           <div className="mb-8 flex flex-col items-center gap-6">
             <div className="professional-frame">
-              <img src="/lovable-uploads/58b81631-dcfa-4f5b-85da-9960e49b229d.png" alt="Kouassi Jean Paul Cédric J (Segrayeur) - Fondateur Aurora Tech" className="h-24 w-24 rounded-full object-cover spectacular-zoom" />
+              <img src="/lovable-uploads/58b81631-dcfa-4f5b-85da-9960e49b229d.png" alt="KOUASSI JEAN PAUL CEDRIC J – Fondateur Aurora Tech africa" className="h-24 w-24 rounded-full object-cover spectacular-zoom" />
             </div>
-            <img src="/lovable-uploads/8715abee-8d22-4b7c-a3da-851b45b46273.png" alt="Aurora Tech Logo" className="h-28 w-auto mx-auto float-magic neon-glow" />
+            <img src="/lovable-uploads/8715abee-8d22-4b7c-a3da-851b45b46273.png" alt="Logo Aurora Tech – Solutions numériques en Côte d'Ivoire" className="h-28 w-auto mx-auto float-magic neon-glow" />
           </div>
           
-          <h1 className="font-poppins text-5xl md:text-7xl font-bold mb-6 leading-tight text-shimmer">AURORA-TECH africa</h1>
+          <h1 className="font-poppins text-5xl md:text-7xl font-bold mb-6 leading-tight text-shimmer">Aurora Tech – Solutions numériques innovantes en Côte d'Ivoire</h1>
           <p className="text-xl md:text-2xl font-light mb-4 opacity-90 float-animation">
-            L'intelligence au cœur de chaque création
+            Transformez votre présence digitale avec l'excellence ivoirienne
           </p>
           
           <div className="w-24 h-1 bg-gradient-to-r from-accent to-primary mx-auto mb-8 neon-glow"></div>
           
           <p className="text-lg md:text-xl mb-6 max-w-2xl mx-auto leading-relaxed">
-            Devenir un acteur majeur de la transformation numérique en Afrique grâce aux solutions numériques innovantes.
+            Nous accompagnons les entreprises et entrepreneurs de Côte d'Ivoire dans leur transformation numérique grâce à des solutions sur mesure : développement web professionnel, applications mobiles innovantes et logiciels personnalisés.
           </p>
           
           <p className="text-sm md:text-base mb-12 opacity-80">
-            Fondé par <span className="font-semibold text-accent">KOUASSI JEAN PAUL CEDRIC J</span> (alias <span className="font-semibold text-accent">SEGRAYEUR</span>)
+            Fondé par <span className="font-semibold text-accent">KOUASSI JEAN PAUL CEDRIC J</span> (alias <span className="font-semibold text-accent">SEGRAYEUR</span>) • Expert en solutions numériques Abidjan
           </p>
 
           {/* CTA Buttons */}
@@ -65,7 +65,7 @@ const Hero = () => {
         {/* Professional Quote */}
         <div className="absolute top-1/2 left-8 transform -translate-y-1/2 hidden lg:flex items-center gap-4 max-w-sm">
           <div className="professional-frame">
-            <img src="/lovable-uploads/58b81631-dcfa-4f5b-85da-9960e49b229d.png" alt="Kouassi Jean Paul Cédric J (Segrayeur)" className="h-16 w-16 rounded-full object-cover spectacular-zoom" />
+            <img src="/lovable-uploads/58b81631-dcfa-4f5b-85da-9960e49b229d.png" alt="KOUASSI JEAN PAUL CEDRIC J – Fondateur Aurora Tech africa" className="h-16 w-16 rounded-full object-cover spectacular-zoom" />
           </div>
           <div className="text-white/90 italic text-sm font-medium">
             "Seul l'effort révèle les véritables compétences des hommes."
@@ -74,10 +74,10 @@ const Hero = () => {
 
         {/* Logo Indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <img src="/lovable-uploads/8715abee-8d22-4b7c-a3da-851b45b46273.png" alt="Aurora Tech Logo" className="h-12 w-auto neon-glow opacity-80" />
+          <img src="/lovable-uploads/8715abee-8d22-4b7c-a3da-851b45b46273.png" alt="Logo Aurora Tech – Solutions numériques en Côte d'Ivoire" className="h-12 w-auto neon-glow opacity-80" />
         </div>
       </div>
-      </section>
+      </main>
     </>;
 };
 export default Hero;
