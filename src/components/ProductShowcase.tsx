@@ -1,31 +1,24 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { BarChart3, FolderOpen, Share2, Bot } from 'lucide-react';
-
 const ProductShowcase = () => {
-  const products = [
-    {
-      icon: <BarChart3 className="w-8 h-8" />,
-      name: "WEÏLI",
-      description: "Outil de gestion et organisation intelligente",
-      color: "from-african-terracotta to-african-earth"
-    },
-    {
-      icon: <FolderOpen className="w-8 h-8" />,
-      name: "FileCed",
-      description: "Application de sauvegarde en ligne",
-      color: "from-african-green to-african-earth"
-    },
-    {
-      icon: <Bot className="w-8 h-8" />,
-      name: "QuickJob CI",
-      description: "La plateforme qui connecte les jeunes aux opportunités de petits boulots",
-      color: "from-african-gold to-african-sunset"
-    }
-  ];
-
-  return (
-    <section className="section-padding bg-secondary/30 african-pattern">
+  const products = [{
+    icon: <BarChart3 className="w-8 h-8" />,
+    name: "WEÏLI",
+    description: "Outil de gestion et organisation intelligente",
+    color: "from-african-terracotta to-african-earth"
+  }, {
+    icon: <FolderOpen className="w-8 h-8" />,
+    name: "FileCed",
+    description: "Application de sauvegarde en ligne",
+    color: "from-african-green to-african-earth"
+  }, {
+    icon: <Bot className="w-8 h-8" />,
+    name: "QuickJob CI",
+    description: "La plateforme qui connecte les jeunes aux opportunités de petits boulots",
+    color: "from-african-gold to-african-sunset"
+  }];
+  return <section className="section-padding bg-secondary/30 african-pattern">
       <div className="container-custom">
         <div className="text-center mb-16 fade-in-up">
           <h2 className="font-poppins text-4xl md:text-5xl font-bold gradient-text mb-4 float-animation">
@@ -36,37 +29,7 @@ const ProductShowcase = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
-          {products.map((product, index) => (
-            <Card key={index} className={`group card-hover-3d transition-all duration-500 tech-shadow hover:glow-effect border-0 bg-white fade-in-up stagger-${(index % 3) + 1} spectacular-zoom`}>
-              <CardContent className="p-8 text-center">
-                <div className={`inline-flex p-6 rounded-full bg-gradient-to-r ${product.color} text-white mb-4 group-hover:scale-125 transition-transform duration-300 float-magic neon-glow shadow-2xl`}>
-                  {product.icon}
-                </div>
-                <h3 className="font-poppins text-xl font-bold mb-3 text-primary">
-                  {product.name}
-                </h3>
-                <p className="text-muted-foreground mb-6 leading-relaxed">
-                  {product.description}
-                </p>
-                <Button 
-                  variant="outline" 
-                  className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors animate-slide-in-bottom"
-                  onClick={() => {
-                    const urls = {
-                      'WEÏLI': 'https://weili-africa.auroratech.be',
-                      'FileCed': 'https://fileced.auroratech.be',
-                      'QuickJob CI': 'https://quickjob-ci.auroratech.be'
-                    };
-                    window.open(urls[product.name as keyof typeof urls], '_blank');
-                  }}
-                >
-                  Visiter
-                </Button>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
+        
 
         <div className="text-center fade-in-up stagger-5">
           <div className="bg-gradient-to-r from-primary/10 to-accent/10 rounded-2xl p-8 max-w-4xl mx-auto tech-shadow pulse-golden">
@@ -77,25 +40,12 @@ const ProductShowcase = () => {
               Aurora Tech est une entreprise ivoirienne spécialisée dans le développement de solutions digitales intelligentes. 
               Fondée par Kouassi Cédric Junior, nous combinons expertise technique et innovation pour répondre aux défis de la digitalisation en Afrique.
             </p>
-            <Button 
-              className="btn-hero animate-slide-in-bottom"
-              onClick={() => {
-                const element = document.getElementById('produits');
-                if (element) {
-                  element.scrollIntoView({ behavior: 'smooth' });
-                } else {
-                  // Fallback si l'ID n'existe pas
-                  window.scrollTo({ top: 0, behavior: 'smooth' });
-                }
-              }}
-            >
+            <Button className="btn-hero animate-slide-in-bottom">
               Voir Tous Nos Produits
             </Button>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ProductShowcase;
