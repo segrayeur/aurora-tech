@@ -1,27 +1,20 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Target, Heart, Zap, User } from 'lucide-react';
-
 const About = () => {
-  const values = [
-    {
-      icon: <Zap className="w-6 h-6" />,
-      title: "Innovation technologique",
-      description: "Nous repoussons les limites de la technologie pour créer des solutions révolutionnaires"
-    },
-    {
-      icon: <Heart className="w-6 h-6" />,
-      title: "Accessibilité & Inclusion",
-      description: "Nos solutions sont conçues pour être accessibles à tous, des PME aux grandes institutions"
-    },
-    {
-      icon: <Target className="w-6 h-6" />,
-      title: "Excellence opérationnelle",
-      description: "Nous nous engageons à livrer des produits de qualité supérieure avec un service client exceptionnel"
-    }
-  ];
-
-  return (
-    <section id="apropos" className="section-padding">
+  const values = [{
+    icon: <Zap className="w-6 h-6" />,
+    title: "Innovation technologique",
+    description: "Nous repoussons les limites de la technologie pour créer des solutions révolutionnaires"
+  }, {
+    icon: <Heart className="w-6 h-6" />,
+    title: "Accessibilité & Inclusion",
+    description: "Nos solutions sont conçues pour être accessibles à tous, des PME aux grandes institutions"
+  }, {
+    icon: <Target className="w-6 h-6" />,
+    title: "Excellence opérationnelle",
+    description: "Nous nous engageons à livrer des produits de qualité supérieure avec un service client exceptionnel"
+  }];
+  return <section id="apropos" className="section-padding">
       <div className="container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left Content */}
@@ -47,7 +40,7 @@ const About = () => {
                   </div>
                   <div>
                     <p className="font-semibold text-primary">Fondateur</p>
-                    <p className="text-xl font-poppins font-bold">Kouassi Cédric Junior</p>
+                    <p className="text-xl font-poppins font-bold">Kouassi Jean Paul Cédric Junior</p>
                   </div>
                 </div>
                 
@@ -57,7 +50,7 @@ const About = () => {
                   </div>
                   <div>
                     <p className="font-semibold text-accent">Objectif 2030</p>
-                    <p className="text-lg font-poppins font-semibold">Devenir le leader africain des solutions IA</p>
+                    <p className="text-lg font-poppins font-semibold">Devenir le leader africain des solutions numériques innovantes</p>
                   </div>
                 </div>
               </div>
@@ -71,8 +64,7 @@ const About = () => {
             </h3>
             
             <div className="space-y-6">
-              {values.map((value, index) => (
-                <Card key={index} className="border-0 bg-white tech-shadow hover:glow-effect transition-all duration-300">
+              {values.map((value, index) => <Card key={index} className="border-0 bg-white tech-shadow hover:glow-effect transition-all duration-300">
                   <CardContent className="p-6">
                     <div className="flex items-start gap-4">
                       <div className="p-3 bg-gradient-to-r from-primary to-accent rounded-full text-white flex-shrink-0">
@@ -88,14 +80,11 @@ const About = () => {
                       </div>
                     </div>
                   </CardContent>
-                </Card>
-              ))}
+                </Card>)}
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;
