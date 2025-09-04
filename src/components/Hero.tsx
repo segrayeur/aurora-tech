@@ -9,7 +9,7 @@ const Hero = () => {
       <Helmet>
         <title>Aurora Tech - L'intelligence au cœur de chaque création | Développement Web & Apps Mobile Côte d'Ivoire</title>
         <meta name="description" content="Aurora Tech, société de développement web et applications mobiles en Côte d'Ivoire. Fondée par Segrayeur (Kouassi Cédric), nous proposons des solutions numériques innovantes en Afrique." />
-        <meta name="keywords" content="développement web, applications mobiles, numérique Afrique, Aurora Tech, Segrayeur, Côte d'Ivoire, solutions digitales, IA, WEÏLI, FileCed, QuickJob CI" />
+        <meta name="keywords" content="développement web, applications mobiles, numérique Afrique, Aurora Tech, Segrayeur, Côte d'Ivoire, solutions digitales, solutions numériques innovantes, WEÏLI, FileCed, QuickJob CI" />
         <meta property="og:title" content="Aurora Tech - Solutions Numériques Innovantes en Afrique" />
         <meta property="og:description" content="Propulsons la transformation numérique de l'Afrique grâce aux solutions numériques innovantes. Fondé par Segrayeur." />
         <meta property="og:image" content="/lovable-uploads/4bd2af73-1cd4-4c48-a722-bf20d98f8b92.png" />
@@ -43,7 +43,7 @@ const Hero = () => {
               />
             </div>
             <img 
-              src="/lovable-uploads/4bd2af73-1cd4-4c48-a722-bf20d98f8b92.png" 
+              src="/lovable-uploads/6990da45-816f-46d1-ae3f-7066b8eb9af7.png" 
               alt="Aurora Tech Logo" 
               className="h-28 w-auto mx-auto float-magic neon-glow"
             />

@@ -49,8 +49,19 @@ const ProductShowcase = () => {
                 <p className="text-muted-foreground mb-6 leading-relaxed">
                   {product.description}
                 </p>
-                <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors animate-slide-in-bottom">
-                  Découvrir
+                <Button 
+                  variant="outline" 
+                  className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors animate-slide-in-bottom"
+                  onClick={() => {
+                    const urls = {
+                      'WEÏLI': 'https://weili-africa.auroratech.be',
+                      'FileCed': 'https://fileced.auroratech.be',
+                      'QuickJob CI': 'https://quickjob-ci.auroratech.be'
+                    };
+                    window.open(urls[product.name as keyof typeof urls], '_blank');
+                  }}
+                >
+                  Visiter
                 </Button>
               </CardContent>
             </Card>

@@ -137,12 +137,50 @@ const Services = () => {
           </div>
 
           <div className="text-center">
-            <p className="text-xl font-poppins font-semibold gradient-text mb-6">
-              "Une solution complète où l'intelligence relie chaque outil."
-            </p>
-            <Button className="btn-hero">
-              Voir l'Écosystème
-            </Button>
+            <h4 className="text-2xl font-poppins font-bold gradient-text mb-8">
+              Sites et Applications créés par Aurora Tech/Segrayeur
+            </h4>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+              <div className="bg-white rounded-xl p-6 tech-shadow">
+                <h5 className="font-semibold text-primary mb-2">Site vitrine</h5>
+                <a href="https://cuef-abidjan.auroratech.be" target="_blank" rel="noopener noreferrer" 
+                   className="text-accent hover:underline">cuef-abidjan.auroratech.be</a>
+              </div>
+              
+              <div className="bg-white rounded-xl p-6 tech-shadow">
+                <h5 className="font-semibold text-primary mb-2">Site institutionnel</h5>
+                <a href="https://llc-ufhb.auroratech.be" target="_blank" rel="noopener noreferrer" 
+                   className="text-accent hover:underline">llc-ufhb.auroratech.be</a>
+              </div>
+              
+              <div className="bg-white rounded-xl p-6 tech-shadow">
+                <h5 className="font-semibold text-primary mb-2">Portfolio</h5>
+                <a href="https://abel-ekra.auroratech.be" target="_blank" rel="noopener noreferrer" 
+                   className="text-accent hover:underline">abel-ekra.auroratech.be</a>
+              </div>
+              
+              <div className="bg-white rounded-xl p-6 tech-shadow">
+                <h5 className="font-semibold text-primary mb-2">SaaS</h5>
+                <a href="https://quickjob-ci.auroratech.be" target="_blank" rel="noopener noreferrer" 
+                   className="text-accent hover:underline">quickjob-ci.auroratech.be</a>
+              </div>
+              
+              <div className="bg-white rounded-xl p-6 tech-shadow">
+                <h5 className="font-semibold text-primary mb-2">Landing page</h5>
+                <a href="https://anumeric.auroratech.be" target="_blank" rel="noopener noreferrer" 
+                   className="text-accent hover:underline">anumeric.auroratech.be</a>
+              </div>
+              
+              <div className="bg-white rounded-xl p-6 tech-shadow">
+                <h5 className="font-semibold text-primary mb-2">Applications</h5>
+                <div className="space-y-1 text-sm">
+                  <p className="text-muted-foreground">• GDES2024 (inscription thèse/master)</p>
+                  <p className="text-muted-foreground">• ATTES.DID (attestations de réussite)</p>
+                  <p className="text-muted-foreground">• PRINT2025 (relevés et attestations)</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
