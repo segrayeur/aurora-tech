@@ -20,7 +20,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center">
             <img 
-              src="/lovable-uploads/4bd2af73-1cd4-4c48-a722-bf20d98f8b92.png" 
+              src="/lovable-uploads/8715abee-8d22-4b7c-a3da-851b45b46273.png" 
               alt="Aurora Tech Logo" 
               className="h-12 w-auto"
             />

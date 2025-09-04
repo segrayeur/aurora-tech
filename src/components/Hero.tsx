@@ -10,7 +10,7 @@ const Hero = () => {
         <meta name="keywords" content="développement web, applications mobiles, numérique Afrique, Aurora Tech, Segrayeur, Côte d'Ivoire, solutions digitales, solutions numériques innovantes, WEÏLI, FileCed, QuickJob CI" />
         <meta property="og:title" content="Aurora Tech - Solutions Numériques Innovantes en Afrique" />
         <meta property="og:description" content="Propulsons la transformation numérique de l'Afrique grâce aux solutions numériques innovantes. Fondé par Segrayeur." />
-        <meta property="og:image" content="/lovable-uploads/4bd2af73-1cd4-4c48-a722-bf20d98f8b92.png" />
+        <meta property="og:image" content="/lovable-uploads/8715abee-8d22-4b7c-a3da-851b45b46273.png" />
         <meta property="og:type" content="website" />
         <link rel="canonical" href="https://auroratech.lovable.app" />
       </Helmet>
@@ -33,7 +33,7 @@ const Hero = () => {
             <div className="professional-frame">
               <img src="/lovable-uploads/58b81631-dcfa-4f5b-85da-9960e49b229d.png" alt="Kouassi Jean Paul Cédric J (Segrayeur) - Fondateur Aurora Tech" className="h-24 w-24 rounded-full object-cover spectacular-zoom" />
             </div>
-            <img src="/lovable-uploads/6990da45-816f-46d1-ae3f-7066b8eb9af7.png" alt="Aurora Tech Logo" className="h-28 w-auto mx-auto float-magic neon-glow" />
+            <img src="/lovable-uploads/8715abee-8d22-4b7c-a3da-851b45b46273.png" alt="Aurora Tech Logo" className="h-28 w-auto mx-auto float-magic neon-glow" />
           </div>
           
           <h1 className="font-poppins text-5xl md:text-7xl font-bold mb-6 leading-tight text-shimmer">AURORA-TECH africa</h1>
@@ -74,7 +74,7 @@ const Hero = () => {
 
         {/* Logo Indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <img src="/lovable-uploads/6990da45-816f-46d1-ae3f-7066b8eb9af7.png" alt="Aurora Tech Logo" className="h-12 w-auto neon-glow opacity-80" />
+          <img src="/lovable-uploads/8715abee-8d22-4b7c-a3da-851b45b46273.png" alt="Aurora Tech Logo" className="h-12 w-auto neon-glow opacity-80" />
         </div>
       </div>
       </section>

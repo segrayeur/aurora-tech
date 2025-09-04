@@ -64,7 +64,7 @@ const Footer = () => {
             {/* Company Info */}
             <div className="lg:col-span-1">
               <div className="mb-4">
-                <img src="/lovable-uploads/4bd2af73-1cd4-4c48-a722-bf20d98f8b92.png" alt="Aurora Tech Logo" className="h-16 w-auto filter brightness-0 invert" />
+                <img src="/lovable-uploads/8715abee-8d22-4b7c-a3da-851b45b46273.png" alt="Aurora Tech Logo" className="h-16 w-auto filter brightness-0 invert" />
               </div>
               <p className="text-primary-foreground/80 mb-6 leading-relaxed">L'intelligence au cœur de chaque création. Propulsons la transformation digitale de l'Afrique grâce à des solutions numériques innovantes.</p>
               
