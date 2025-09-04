@@ -21,7 +21,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center">
             <img 
-              src="/lovable-uploads/8715abee-8d22-4b7c-a3da-851b45b46273.png" 
+              src="/lovable-uploads/905d4e4e-72d1-47d4-a056-42b3e6a6c576.png" 
               alt="Logo Aurora Tech – Solutions numériques en Côte d'Ivoire" 
               className="h-12 w-auto"
             />

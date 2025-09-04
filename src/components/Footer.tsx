@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
+// Icons replaced with Aurora Tech logo
 const Footer = () => {
   const quickLinks = [{
     label: 'Accueil',
@@ -40,19 +40,19 @@ const Footer = () => {
     href: '#video'
   }];
   const socialLinks = [{
-    icon: <Facebook className="w-5 h-5" />,
+    icon: <img src="/lovable-uploads/905d4e4e-72d1-47d4-a056-42b3e6a6c576.png" alt="Aurora Tech logo" className="w-5 h-5" />,
     href: '#',
     label: 'Facebook'
   }, {
-    icon: <Twitter className="w-5 h-5" />,
+    icon: <img src="/lovable-uploads/905d4e4e-72d1-47d4-a056-42b3e6a6c576.png" alt="Aurora Tech logo" className="w-5 h-5" />,
     href: '#',
     label: 'Twitter'
   }, {
-    icon: <Linkedin className="w-5 h-5" />,
+    icon: <img src="/lovable-uploads/905d4e4e-72d1-47d4-a056-42b3e6a6c576.png" alt="Aurora Tech logo" className="w-5 h-5" />,
     href: '#',
     label: 'LinkedIn'
   }, {
-    icon: <Instagram className="w-5 h-5" />,
+    icon: <img src="/lovable-uploads/905d4e4e-72d1-47d4-a056-42b3e6a6c576.png" alt="Aurora Tech logo" className="w-5 h-5" />,
     href: '#',
     label: 'Instagram'
   }];
@@ -64,22 +64,22 @@ const Footer = () => {
             {/* Company Info */}
             <div className="lg:col-span-1">
               <div className="mb-4">
-                <img src="/lovable-uploads/8715abee-8d22-4b7c-a3da-851b45b46273.png" alt="Aurora Tech Logo" className="h-16 w-auto filter brightness-0 invert" />
+                <img src="/lovable-uploads/905d4e4e-72d1-47d4-a056-42b3e6a6c576.png" alt="Aurora Tech Logo" className="h-16 w-auto" />
               </div>
               <p className="text-primary-foreground/80 mb-6 leading-relaxed">L'intelligence au cœur de chaque création. Propulsons la transformation digitale de l'Afrique grâce à des solutions numériques innovantes.</p>
               
               {/* Contact Info */}
               <div className="space-y-3">
                 <div className="flex items-center gap-3">
-                  <MapPin className="w-4 h-4 text-accent" />
+                  <img src="/lovable-uploads/905d4e4e-72d1-47d4-a056-42b3e6a6c576.png" alt="Aurora Tech logo" className="w-4 h-4" />
                   <span className="text-sm">Cocody Riviera 2, Abidjan</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Phone className="w-4 h-4 text-accent" />
+                  <img src="/lovable-uploads/905d4e4e-72d1-47d4-a056-42b3e6a6c576.png" alt="Aurora Tech logo" className="w-4 h-4" />
                   <span className="text-sm">+225 0565868786 / +225 0778518902</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Mail className="w-4 h-4 text-accent" />
+                  <img src="/lovable-uploads/905d4e4e-72d1-47d4-a056-42b3e6a6c576.png" alt="Aurora Tech logo" className="w-4 h-4" />
                   <span className="text-sm">auroratech2222@gmail.com</span>
                 </div>
               </div>

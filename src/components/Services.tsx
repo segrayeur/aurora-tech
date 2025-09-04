@@ -1,67 +1,67 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Globe, FileText, Smartphone, Monitor, Palette, Camera, Bot, Brain, BookOpen, Settings } from 'lucide-react';
+// Icons replaced with Aurora Tech logo
 
 const Services = () => {
   const services = [
     {
-      icon: <Globe className="w-8 h-8" />,
+      icon: <img src="/lovable-uploads/905d4e4e-72d1-47d4-a056-42b3e6a6c576.png" alt="Aurora Tech logo" className="w-8 h-8" />,
       domain: "Développement Web",
       description: "Création de sites vitrines/e-commerce performants.",
       target: "PME, Startups",
       color: "from-blue-500 to-cyan-500"
     },
     {
-      icon: <Smartphone className="w-8 h-8" />,
+      icon: <img src="/lovable-uploads/905d4e4e-72d1-47d4-a056-42b3e6a6c576.png" alt="Aurora Tech logo" className="w-8 h-8" />,
       domain: "Applications/SaaS",
       description: "Développement d'applications personnalisées (iOS, Android, Web).",
       target: "Startups, Grandes entreprises",
       color: "from-purple-500 to-violet-500"
     },
     {
-      icon: <Monitor className="w-8 h-8" />,
+      icon: <img src="/lovable-uploads/905d4e4e-72d1-47d4-a056-42b3e6a6c576.png" alt="Aurora Tech logo" className="w-8 h-8" />,
       domain: "Logiciels Web/Mobile",
       description: "Solutions logicielles adaptées à vos processus métiers.",
       target: "Administrations, Écoles",
       color: "from-orange-500 to-amber-500"
     },
     {
-      icon: <Palette className="w-8 h-8" />,
+      icon: <img src="/lovable-uploads/905d4e4e-72d1-47d4-a056-42b3e6a6c576.png" alt="Aurora Tech logo" className="w-8 h-8" />,
       domain: "Design Graphique",
       description: "Création de logos, flyers, affiches percutants.",
       target: "Tous secteurs",
       color: "from-pink-500 to-rose-500"
     },
     {
-      icon: <FileText className="w-8 h-8" />,
+      icon: <img src="/lovable-uploads/905d4e4e-72d1-47d4-a056-42b3e6a6c576.png" alt="Aurora Tech logo" className="w-8 h-8" />,
       domain: "Factures Proforma",
       description: "Génération automatisée de documents professionnels.",
       target: "TPE, Commerces",
       color: "from-green-500 to-emerald-500"
     },
     {
-      icon: <Camera className="w-8 h-8" />,
+      icon: <img src="/lovable-uploads/905d4e4e-72d1-47d4-a056-42b3e6a6c576.png" alt="Aurora Tech logo" className="w-8 h-8" />,
       domain: "Montage Vidéo",
       description: "Services professionnels de montage vidéo et post-production.",
       target: "Événements, Campagnes marketing",
       color: "from-indigo-500 to-blue-500"
     },
     {
-      icon: <Brain className="w-8 h-8" />,
+      icon: <img src="/lovable-uploads/905d4e4e-72d1-47d4-a056-42b3e6a6c576.png" alt="Aurora Tech logo" className="w-8 h-8" />,
       domain: "Formation en IA",
       description: "Formations en intelligence artificielle pour débutants et professionnels.",
       target: "Étudiants, Professionnels",
       color: "from-violet-500 to-purple-500"
     },
     {
-      icon: <BookOpen className="w-8 h-8" />,
+      icon: <img src="/lovable-uploads/905d4e4e-72d1-47d4-a056-42b3e6a6c576.png" alt="Aurora Tech logo" className="w-8 h-8" />,
       domain: "Formation Pack Office",
       description: "Formations complètes en Word, Excel, PowerPoint et outils bureautiques.",
       target: "Entreprises, Particuliers",
       color: "from-teal-500 to-cyan-500"
     },
     {
-      icon: <Settings className="w-8 h-8" />,
+      icon: <img src="/lovable-uploads/905d4e4e-72d1-47d4-a056-42b3e6a6c576.png" alt="Aurora Tech logo" className="w-8 h-8" />,
       domain: "Installation Système",
       description: "Installation et configuration de systèmes Windows et logiciels.",
       target: "Entreprises, Particuliers",
@@ -122,7 +122,7 @@ const Services = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
             <div className="text-center">
               <div className="bg-white rounded-xl p-6 tech-shadow mb-4">
-                <Globe className="w-12 h-12 text-primary mx-auto mb-3" />
+                <img src="/lovable-uploads/905d4e4e-72d1-47d4-a056-42b3e6a6c576.png" alt="Aurora Tech logo" className="w-12 h-12 mx-auto mb-3" />
                 <p className="font-semibold">Créez votre site web</p>
                 <p className="text-sm text-muted-foreground">(Service)</p>
               </div>
@@ -135,7 +135,7 @@ const Services = () => {
 
             <div className="text-center">
               <div className="bg-white rounded-xl p-6 tech-shadow mb-4">
-                <Smartphone className="w-12 h-12 text-primary mx-auto mb-3" />
+                <img src="/lovable-uploads/905d4e4e-72d1-47d4-a056-42b3e6a6c576.png" alt="Aurora Tech logo" className="w-12 h-12 mx-auto mb-3" />
                 <p className="font-semibold">Développez votre appli</p>
                 <p className="text-sm text-muted-foreground">(Service)</p>
               </div>
@@ -148,7 +148,7 @@ const Services = () => {
 
             <div className="text-center">
               <div className="bg-white rounded-xl p-6 tech-shadow mb-4">
-                <Palette className="w-12 h-12 text-primary mx-auto mb-3" />
+                <img src="/lovable-uploads/905d4e4e-72d1-47d4-a056-42b3e6a6c576.png" alt="Aurora Tech logo" className="w-12 h-12 mx-auto mb-3" />
                 <p className="font-semibold">Conception graphique</p>
                 <p className="text-sm text-muted-foreground">(Service)</p>
               </div>
