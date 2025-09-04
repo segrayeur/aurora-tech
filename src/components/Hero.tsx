@@ -37,7 +37,7 @@ const Hero = () => {
           <div className="mb-8 flex flex-col items-center gap-6">
             <div className="professional-frame">
               <img 
-                src={cedricPhoto}
+                src="/lovable-uploads/58b81631-dcfa-4f5b-85da-9960e49b229d.png"
                 alt="Kouassi Jean Paul Cédric J (Segrayeur) - Fondateur Aurora Tech" 
                 className="h-24 w-24 rounded-full object-cover spectacular-zoom"
               />

@@ -56,24 +56,40 @@ const About = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <div className="fade-in-left">
                 <h2 className="font-poppins text-4xl font-bold gradient-text mb-6">
-                  Notre Fondateur
+                  Présentation : KOUASSI JEAN PAUL CEDRIC J (alias SEGRAYEUR)
                 </h2>
                 <div className="space-y-6">
                   <p className="text-lg leading-relaxed">
-                    <strong className="text-primary">KOUASSI JEAN PAUL CEDRIC J</strong>, 
-                    connu sous le nom de <strong className="text-accent">SEGRAYEUR</strong>, 
-                    est le visionnaire derrière Aurora Tech.
+                    Je suis <strong className="text-primary">Kouassi Jean Paul Cédric Junior</strong>, informaticien à l'UFR LLC/UFHB, développeur passionné basé à <strong className="text-accent">Abidjan, Côte d'Ivoire</strong>.
                   </p>
                   <p className="text-muted-foreground leading-relaxed">
-                    Passionné par l'innovation technologique et convaincu du potentiel de l'Afrique 
-                    dans le domaine numérique, il a fondé Aurora Tech avec une mission claire : 
-                    proposer des solutions numériques innovantes qui transforment les entreprises africaines.
+                    Connu sous le pseudonyme <strong className="text-accent">Segrayeur</strong>, j'aide les entreprises, startups et particuliers à réussir leur transformation digitale grâce à des solutions logicielles performantes et sur mesure.
                   </p>
-                  <p className="text-muted-foreground leading-relaxed">
-                    Basé à <strong>Abidjan, Cocody Riviera 2</strong>, SEGRAYEUR dirige une équipe 
-                    déterminée à faire d'Aurora Tech un acteur incontournable de la tech en Côte d'Ivoire 
-                    et en Afrique de l'Ouest.
-                  </p>
+                  
+                  <div className="bg-gradient-to-r from-primary/5 to-accent/5 rounded-xl p-6">
+                    <h3 className="font-semibold text-primary mb-4 text-lg">💻 Expertises principales :</h3>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li>• Développement d'applications mobiles (Android/iOS)</li>
+                      <li>• Développement web (sites vitrines, e-commerce, applications SaaS)</li>
+                      <li>• Conception de logiciels de bureau et outils internes</li>
+                      <li>• Création de solutions numériques adaptées aux besoins des entreprises</li>
+                      <li>• Technologies : Windev, Python, Java, développement natif et frameworks modernes</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-gradient-to-r from-accent/5 to-primary/5 rounded-xl p-6">
+                    <h3 className="font-semibold text-accent mb-2 text-lg">🎯 Mission :</h3>
+                    <p className="text-muted-foreground leading-relaxed">
+                      Proposer des solutions logicielles modernes, robustes et accessibles, adaptées aux besoins du marché africain et international.
+                    </p>
+                  </div>
+                  
+                  <div className="bg-gradient-to-r from-primary/5 to-accent/5 rounded-xl p-6">
+                    <h3 className="font-semibold text-primary mb-2 text-lg">🌟 Vision :</h3>
+                    <p className="text-muted-foreground leading-relaxed">
+                      Faire d'Aurora Tech un acteur incontournable de la transformation digitale en Afrique grâce aux solutions numériques innovantes.
+                    </p>
+                  </div>
                 </div>
               </div>
 
@@ -81,10 +97,12 @@ const About = () => {
                 <Card className="border-0 bg-gradient-to-br from-primary/10 to-accent/10 tech-shadow">
                   <CardContent className="p-8">
                     <div className="text-center">
-                      <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-r from-primary to-accent p-1">
-                        <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
-                          <span className="text-4xl font-bold gradient-text">SG</span>
-                        </div>
+                      <div className="w-40 h-40 mx-auto mb-6 rounded-full bg-gradient-to-r from-primary to-accent p-1 professional-frame">
+                        <img 
+                          src="/lovable-uploads/58b81631-dcfa-4f5b-85da-9960e49b229d.png"
+                          alt="Kouassi Jean Paul Cédric J (Segrayeur) - Fondateur Aurora Tech" 
+                          className="w-full h-full rounded-full object-cover spectacular-zoom"
+                        />
                       </div>
                       <h3 className="font-poppins text-2xl font-bold text-primary mb-2">
                         SEGRAYEUR
@@ -96,6 +114,7 @@ const About = () => {
                         <p>📍 Abidjan, Cocody Riviera 2</p>
                         <p>📞 +225 0665868786</p>
                         <p>📧 auroratech2222@gmail.com</p>
+                        <p>📧 auroratech@tutamail.com</p>
                       </div>
                     </div>
                   </CardContent>
