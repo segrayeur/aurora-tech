@@ -10,20 +10,26 @@ const ProductShowcase = () => {
     {
       icon: <BarChart3 className="w-8 h-8" />,
       name: "WEÏLI",
-      description: "Outil de gestion et organisation intelligente",
-      color: "from-primary to-accent"
+      description: "La plateforme de vente en ligne gratuite",
+      color: "from-african-terracotta to-african-earth"
     },
     {
       icon: <FolderOpen className="w-8 h-8" />,
       name: "FileCed",
-      description: "Application de sauvegarde en ligne",
-      color: "from-accent to-primary"
+      description: "Stockage cloud optimisé par IA",
+      color: "from-african-green to-african-earth"
     },
     {
       icon: <Share2 className="w-8 h-8" />,
-      name: "QuickJob CI",
-      description: "La plateforme qui connecte les jeunes aux opportunités de petits boulots",
-      color: "from-secondary to-accent"
+      name: "Aurora Share",
+      description: "Le partage à la vitesse de l'intelligence",
+      color: "from-african-gold to-african-sunset"
+    },
+    {
+      icon: <Bot className="w-8 h-8" />,
+      name: "Byan",
+      description: "Booste et création digitale",
+      color: "from-african-sunset to-african-terracotta"
     }
   ];
 

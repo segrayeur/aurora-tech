@@ -8,49 +8,50 @@
 
 @layer base {
   :root {
-    /* Aurora Tech Colors - Dark Futuristic Theme */
-    --aurora-neon: 142 86% 50%;       /* #00ff88 - Vert néon */
-    --aurora-glow: 142 100% 60%;      /* #00ff99 - Éclat vert */
-    --aurora-dark: 222 84% 4.9%;      /* #0a0a0a - Noir profond */
-    --aurora-accent: 180 100% 50%;    /* #00ffff - Cyan */
+    /* Traditional African Colors */
+    --african-terracotta: 16 85% 45%;      /* #C8622D - Terre cuite africaine */
+    --african-gold: 45 95% 55%;            /* #E6B454 - Or africain */
+    --african-earth: 30 60% 35%;           /* #8B5A2B - Terre d'Afrique */
+    --african-green: 120 40% 30%;          /* #4D8B4D - Vert baobab */
+    --african-sunset: 25 90% 55%;          /* #E67E22 - Coucher de soleil */ 
     
-    /* Design System Colors - Dark Mode */
-    --background: 222 84% 4.9%;       /* Dark background */
-    --foreground: 210 40% 98%;        /* Light text */
+    /* Design System Colors */
+    --background: 0 0% 98%;
+    --foreground: 223 84% 15%;
 
-    --card: 217 32.6% 17.5%;          /* Dark card */
-    --card-foreground: 210 40% 98%;
+    --card: 0 0% 100%;
+    --card-foreground: 223 84% 15%;
 
-    --popover: 222 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 223 84% 15%;
 
-    --primary: 142 76% 36%;           /* Aurora Green */
-    --primary-foreground: 210 40% 98%;
+    --primary: 16 85% 45%;            /* African Terracotta */
+    --primary-foreground: 0 0% 98%;
 
-    --secondary: 217 32.6% 17.5%;     /* Dark secondary */
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 30 60% 90%;          /* Light earth tone */
+    --secondary-foreground: 30 60% 35%;
 
-    --muted: 217 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 30 30% 92%;
+    --muted-foreground: 30 40% 45%;
 
-    --accent: 142 86% 50%;            /* Neon Green */
-    --accent-foreground: 222 84% 4.9%;
+    --accent: 45 95% 55%;             /* African Gold */
+    --accent-foreground: 30 60% 15%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 217 32.6% 17.5%;
-    --input: 217 32.6% 17.5%;
-    --ring: 142 76% 36%;
+    --border: 223 20% 88%;
+    --input: 223 20% 90%;
+    --ring: 16 85% 45%;
     
-    /* Aurora Design Tokens */
-    --gradient-primary: linear-gradient(135deg, hsl(var(--aurora-neon)), hsl(var(--aurora-glow)));
-    --gradient-accent: linear-gradient(135deg, hsl(var(--aurora-accent)), hsl(var(--aurora-neon)));
-    --gradient-hero: linear-gradient(135deg, hsl(var(--aurora-dark)) 0%, hsl(var(--aurora-neon)) 100%);
-    --gradient-aurora: linear-gradient(45deg, hsl(var(--aurora-neon)), hsl(var(--aurora-accent)), hsl(var(--aurora-glow)));
+    /* African Design Tokens */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--african-terracotta)), hsl(var(--african-earth)));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--african-gold)), hsl(var(--african-sunset)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--african-terracotta)) 0%, hsl(var(--african-gold)) 100%);
+    --gradient-african: linear-gradient(45deg, hsl(var(--african-terracotta)), hsl(var(--african-gold)), hsl(var(--african-green)));
     
-    --shadow-neon: 0 0 20px hsl(var(--aurora-neon) / 0.5);
-    --shadow-glow: 0 0 40px hsl(var(--aurora-glow) / 0.3);
+    --shadow-african: 0 10px 40px -15px hsl(var(--african-terracotta) / 0.4);
+    --shadow-golden: 0 0 30px hsl(var(--african-gold) / 0.3);
     
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -134,11 +135,11 @@
   }
 
   .tech-shadow {
-    box-shadow: var(--shadow-neon);
+    box-shadow: var(--shadow-african);
   }
 
   .glow-effect {
-    box-shadow: var(--shadow-glow);
+    box-shadow: var(--shadow-golden);
   }
 
   .btn-hero {

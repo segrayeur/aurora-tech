@@ -9,45 +9,52 @@ const Services = () => {
   const services = [
     {
       icon: <Globe className="w-8 h-8" />,
-      domain: "Développement Web",
-      description: "Création de sites vitrines/e-commerce performants et modernes.",
+      domain: "Sites Web",
+      description: "Création de sites vitrines/e-commerce performants.",
       target: "PME, Startups",
-      color: "from-primary to-accent"
-    },
-    {
-      icon: <Smartphone className="w-8 h-8" />,
-      domain: "Applications Mobiles",
-      description: "Développement d'applications iOS et Android personnalisées.",
-      target: "Startups, Grandes entreprises",
-      color: "from-accent to-primary"
-    },
-    {
-      icon: <Monitor className="w-8 h-8" />,
-      domain: "Applications SaaS",
-      description: "Solutions logicielles en ligne adaptées à vos besoins.",
-      target: "Entreprises, Organisations",
-      color: "from-secondary to-accent"
+      color: "from-blue-500 to-cyan-500"
     },
     {
       icon: <FileText className="w-8 h-8" />,
-      domain: "Logiciels Web/Mobile",
-      description: "Applications web et mobiles sur mesure.",
-      target: "Administrations, PME",
-      color: "from-primary to-secondary"
+      domain: "Factures Proforma",
+      description: "Génération automatisée de documents professionnels.",
+      target: "TPE, Commerces",
+      color: "from-green-500 to-emerald-500"
+    },
+    {
+      icon: <Smartphone className="w-8 h-8" />,
+      domain: "Apps Web/Mobile",
+      description: "Développement d'applications personnalisées (iOS, Android, Web).",
+      target: "Startups, Grandes entreprises",
+      color: "from-purple-500 to-violet-500"
+    },
+    {
+      icon: <Monitor className="w-8 h-8" />,
+      domain: "Logiciels Sur Mesure",
+      description: "Solutions logicielles adaptées à vos processus métiers.",
+      target: "Administrations, Écoles",
+      color: "from-orange-500 to-amber-500"
     },
     {
       icon: <Palette className="w-8 h-8" />,
       domain: "Design Graphique",
-      description: "Création de logos, identités visuelles et supports marketing.",
+      description: "Création de logos, flyers, affiches percutants.",
       target: "Tous secteurs",
-      color: "from-accent to-secondary"
+      color: "from-pink-500 to-rose-500"
     },
     {
       icon: <Camera className="w-8 h-8" />,
-      domain: "Montage Vidéo",
-      description: "Services professionnels de montage et post-production vidéo.",
-      target: "Créateurs, Entreprises",
-      color: "from-secondary to-primary"
+      domain: "Photo & Vidéo",
+      description: "Services professionnels de photographie et montage vidéo.",
+      target: "Événements, Campagnes marketing",
+      color: "from-indigo-500 to-blue-500"
+    },
+    {
+      icon: <Bot className="w-8 h-8" />,
+      domain: "IA & Automatisation",
+      description: "Solutions d'intelligence artificielle pour optimiser vos tâches.",
+      target: "Grandes entreprises, Industrie",
+      color: "from-red-500 to-orange-500"
     }
   ];
 

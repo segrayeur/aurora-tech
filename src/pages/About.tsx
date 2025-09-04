@@ -1,8 +1,5 @@
-import { Helmet } from 'react-helmet';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import GrowthChart from '@/components/GrowthChart';
-import WhatsAppButton from '@/components/WhatsAppButton';
 import { Card, CardContent } from '@/components/ui/card';
 import { Users, Target, Award, Zap } from 'lucide-react';
 

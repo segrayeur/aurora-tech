@@ -41,19 +41,9 @@ const Hero = () => {
           
           <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
           
-          <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto leading-relaxed">
-            Devenir un acteur majeur de la transformation digitale en Afrique grâce aux solutions numériques innovantes.
+          <p className="text-lg md:text-xl mb-12 max-w-2xl mx-auto leading-relaxed">
+            Propulsons la transformation digitale de l'Afrique grâce à des solutions IA innovantes.
           </p>
-
-          {/* Photo professionnelle de Cédric Segrayeur */}
-          <div className="mb-8">
-            <img 
-              src="/lovable-uploads/f27617a5-778e-440a-a87a-5cf8f5c0a1be.png" 
-              alt="KOUASSI JEAN PAUL CEDRIC J - Fondateur Aurora Tech (Segrayeur)" 
-              className="w-32 h-32 rounded-full mx-auto border-4 border-accent/50 shadow-lg hover:scale-105 transition-transform duration-300"
-            />
-            <p className="text-sm mt-2 text-accent font-semibold">Fondateur : KOUASSI JEAN PAUL CEDRIC J (SEGRAYEUR)</p>
-          </div>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
