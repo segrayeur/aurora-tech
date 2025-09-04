@@ -1,8 +1,12 @@
 import { Bot, MessageCircle, Phone, Cpu } from 'lucide-react';
 import { useState } from 'react';
+import ChatbotRAG from './ChatbotRAG';
+import OpenAIChat from './OpenAIChat';
 
 const FloatingButtons = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isChatbotOpen, setIsChatbotOpen] = useState(false);
+  const [isOpenAIOpen, setIsOpenAIOpen] = useState(false);
 
   const buttons = [
     {
@@ -27,7 +31,8 @@ const FloatingButtons = () => {
       icon: <Bot className="w-5 h-5" />,
       label: "Chatbot",
       action: () => {
-        alert("Chatbot bientôt disponible !");
+        setIsOpen(false);
+        setIsChatbotOpen(true);
       },
       color: "bg-purple-500 hover:bg-purple-600"
     },
@@ -35,14 +40,16 @@ const FloatingButtons = () => {
       icon: <Cpu className="w-5 h-5" />,
       label: "OpenAI",
       action: () => {
-        window.open("https://openai.com", '_blank');
+        setIsOpen(false);
+        setIsOpenAIOpen(true);
       },
       color: "bg-indigo-500 hover:bg-indigo-600"
     }
   ];
 
   return (
-    <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-3">
+    <>
+      <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-3">
       {/* Individual buttons */}
       {isOpen && (
         <div className="flex flex-col gap-3 animate-fade-in">
@@ -71,7 +78,12 @@ const FloatingButtons = () => {
       >
         <MessageCircle className={`w-6 h-6 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`} />
       </button>
-    </div>
+      </div>
+
+      {/* Chat Modals */}
+      <ChatbotRAG isOpen={isChatbotOpen} onClose={() => setIsChatbotOpen(false)} />
+      <OpenAIChat isOpen={isOpenAIOpen} onClose={() => setIsOpenAIOpen(false)} />
+    </>
   );
 };
 
