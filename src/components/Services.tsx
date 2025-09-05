@@ -1,6 +1,12 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 // Icons replaced with Aurora Tech logo
+import cuefWebsite from '@/assets/cuef-website.jpg';
+import llcWebsite from '@/assets/llc-website.jpg';
+import portfolioWebsite from '@/assets/portfolio-website.jpg';
+import quickjobApp from '@/assets/quickjob-app.jpg';
+import landingPage from '@/assets/landing-page.jpg';
+import adminApp from '@/assets/admin-app.jpg';
 
 const Services = () => {
   const services = [
@@ -166,37 +172,43 @@ const Services = () => {
             </h4>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-              <div className="bg-white rounded-xl p-6 tech-shadow">
+              <div className="bg-white rounded-xl p-6 tech-shadow hover:scale-105 transition-all duration-300">
+                <img src={cuefWebsite} alt="Site vitrine CUEF Abidjan - Centre Universitaire d'Enseignement du Français" className="w-full h-32 object-cover rounded-lg mb-4" />
                 <h5 className="font-semibold text-primary mb-2">Site vitrine</h5>
                 <a href="https://cuef-abidjan.auroratech.be" target="_blank" rel="noopener noreferrer" 
                    className="text-accent hover:underline">cuef-abidjan.auroratech.be</a>
               </div>
               
-              <div className="bg-white rounded-xl p-6 tech-shadow">
+              <div className="bg-white rounded-xl p-6 tech-shadow hover:scale-105 transition-all duration-300">
+                <img src={llcWebsite} alt="Site institutionnel LLC UFHB - Laboratoire de Linguistique et Communication" className="w-full h-32 object-cover rounded-lg mb-4" />
                 <h5 className="font-semibold text-primary mb-2">Site institutionnel</h5>
                 <a href="https://llc-ufhb.auroratech.be" target="_blank" rel="noopener noreferrer" 
                    className="text-accent hover:underline">llc-ufhb.auroratech.be</a>
               </div>
               
-              <div className="bg-white rounded-xl p-6 tech-shadow">
+              <div className="bg-white rounded-xl p-6 tech-shadow hover:scale-105 transition-all duration-300">
+                <img src={portfolioWebsite} alt="Portfolio personnel Abel Ekra - Designer graphique et développeur" className="w-full h-32 object-cover rounded-lg mb-4" />
                 <h5 className="font-semibold text-primary mb-2">Portfolio</h5>
                 <a href="https://abel-ekra.auroratech.be" target="_blank" rel="noopener noreferrer" 
                    className="text-accent hover:underline">abel-ekra.auroratech.be</a>
               </div>
               
-              <div className="bg-white rounded-xl p-6 tech-shadow">
+              <div className="bg-white rounded-xl p-6 tech-shadow hover:scale-105 transition-all duration-300">
+                <img src={quickjobApp} alt="Application SaaS QuickJob CI - Plateforme emploi Côte d'Ivoire" className="w-full h-32 object-cover rounded-lg mb-4" />
                 <h5 className="font-semibold text-primary mb-2">SaaS</h5>
                 <a href="https://quickjob-ci.auroratech.be" target="_blank" rel="noopener noreferrer" 
                    className="text-accent hover:underline">quickjob-ci.auroratech.be</a>
               </div>
               
-              <div className="bg-white rounded-xl p-6 tech-shadow">
+              <div className="bg-white rounded-xl p-6 tech-shadow hover:scale-105 transition-all duration-300">
+                <img src={landingPage} alt="Landing page ANUMERIC - Services de transformation digitale" className="w-full h-32 object-cover rounded-lg mb-4" />
                 <h5 className="font-semibold text-primary mb-2">Landing page</h5>
                 <a href="https://anumeric.auroratech.be" target="_blank" rel="noopener noreferrer" 
                    className="text-accent hover:underline">anumeric.auroratech.be</a>
               </div>
               
-              <div className="bg-white rounded-xl p-6 tech-shadow">
+              <div className="bg-white rounded-xl p-6 tech-shadow hover:scale-105 transition-all duration-300">
+                <img src={adminApp} alt="Applications de gestion académique - GDES2024, ATTES.DID, PRINT2025" className="w-full h-32 object-cover rounded-lg mb-4" />
                 <h5 className="font-semibold text-primary mb-2">Applications</h5>
                 <div className="space-y-1 text-sm">
                   <p className="text-muted-foreground">• GDES2024 (inscription thèse/master)</p>
