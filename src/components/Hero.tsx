@@ -29,11 +29,11 @@ const Hero = () => {
       <div className="relative z-10 container-custom text-center text-white">
         <div className="max-w-4xl mx-auto">
           {/* Professional Photo + Logo */}
-          <div className="mb-8 flex flex-col items-center gap-6">
+          <div className="mb-8 flex items-center justify-center gap-8">
             <div className="professional-frame">
               <img src="/lovable-uploads/58b81631-dcfa-4f5b-85da-9960e49b229d.png" alt="Kouassi Jean Paul Cédric J – Fondateur Aurora Tech" className="h-24 w-24 rounded-full object-cover spectacular-zoom" />
             </div>
-            <img src="/lovable-uploads/6990da45-816f-46d1-ae3f-7066b8eb9af7.png" alt="Logo Aurora Tech – Solutions numériques en Côte d'Ivoire" className="h-28 w-auto mx-auto float-magic neon-glow" />
+            <img src="/lovable-uploads/686ac6a2-2789-435b-9556-0afd303c797c.png" alt="Logo Aurora Tech – Solutions numériques en Côte d'Ivoire" className="h-32 w-auto float-magic neon-glow" />
           </div>
           
           <h1 className="font-poppins text-5xl md:text-7xl font-bold mb-6 leading-tight text-shimmer">Aurora Tech – Solutions numériques innovantes en Côte d'Ivoire</h1>

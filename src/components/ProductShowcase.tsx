@@ -21,7 +21,7 @@ const ProductShowcase = () => {
     color: "from-african-gold to-african-sunset",
     alt: "QuickJob CI – Gestion des emplois par Aurora Tech"
   }];
-  return <section className="section-padding bg-secondary/30 african-pattern">
+  return <section id="nos-produits-phares" className="section-padding bg-secondary/30 african-pattern">
       <div className="container-custom">
         <div className="text-center mb-16 fade-in-up">
           <h2 className="font-poppins text-4xl md:text-5xl font-bold gradient-text mb-4 float-animation">

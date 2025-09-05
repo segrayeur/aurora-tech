@@ -1,19 +1,18 @@
-import { Bot, MessageCircle, Phone, Cpu } from 'lucide-react';
+import { Bot, MessageCircle, Phone } from 'lucide-react';
 import { useState } from 'react';
 import ChatbotRAG from './ChatbotRAG';
-import OpenAIChat from './OpenAIChat';
 
 const FloatingButtons = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isChatbotOpen, setIsChatbotOpen] = useState(false);
-  const [isOpenAIOpen, setIsOpenAIOpen] = useState(false);
+  
 
   const buttons = [
     {
       icon: <MessageCircle className="w-5 h-5" />,
       label: "WhatsApp",
       action: () => {
-        const phoneNumber = "2250665868786";
+        const phoneNumber = "2250565868786";
         const message = "Bonjour Aurora Tech, je suis intéressé par vos services.";
         window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, '_blank');
       },
@@ -29,21 +28,12 @@ const FloatingButtons = () => {
     },
     {
       icon: <Bot className="w-5 h-5" />,
-      label: "Chatbot",
+      label: "Assistant IA",
       action: () => {
         setIsOpen(false);
         setIsChatbotOpen(true);
       },
       color: "bg-purple-500 hover:bg-purple-600"
-    },
-    {
-      icon: <Cpu className="w-5 h-5" />,
-      label: "OpenAI",
-      action: () => {
-        setIsOpen(false);
-        setIsOpenAIOpen(true);
-      },
-      color: "bg-indigo-500 hover:bg-indigo-600"
     }
   ];
 
@@ -80,9 +70,8 @@ const FloatingButtons = () => {
       </button>
       </div>
 
-      {/* Chat Modals */}
+      {/* Chat Modal */}
       <ChatbotRAG isOpen={isChatbotOpen} onClose={() => setIsChatbotOpen(false)} />
-      <OpenAIChat isOpen={isOpenAIOpen} onClose={() => setIsOpenAIOpen(false)} />
     </>
   );
 };
