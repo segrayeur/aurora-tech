@@ -177,6 +177,9 @@ const Services = () => {
                 <h5 className="font-semibold text-primary mb-2">Site vitrine</h5>
                 <a href="https://cuef-abidjan.auroratech.be" target="_blank" rel="noopener noreferrer" 
                    className="text-accent hover:underline">cuef-abidjan.auroratech.be</a>
+                <div className="mt-3 text-xs text-muted-foreground">
+                  <p><strong>SEO:</strong> Apprentissage français Abidjan, cours de français Côte d'Ivoire, formation linguistique</p>
+                </div>
               </div>
               
               <div className="bg-white rounded-xl p-6 tech-shadow hover:scale-105 transition-all duration-300">
@@ -184,6 +187,9 @@ const Services = () => {
                 <h5 className="font-semibold text-primary mb-2">Site institutionnel</h5>
                 <a href="https://llc-ufhb.auroratech.be" target="_blank" rel="noopener noreferrer" 
                    className="text-accent hover:underline">llc-ufhb.auroratech.be</a>
+                <div className="mt-3 text-xs text-muted-foreground">
+                  <p><strong>SEO:</strong> Recherche linguistique Côte d'Ivoire, communication universitaire, laboratoire UFHB</p>
+                </div>
               </div>
               
               <div className="bg-white rounded-xl p-6 tech-shadow hover:scale-105 transition-all duration-300">
@@ -191,6 +197,9 @@ const Services = () => {
                 <h5 className="font-semibold text-primary mb-2">Portfolio</h5>
                 <a href="https://abel-ekra.auroratech.be" target="_blank" rel="noopener noreferrer" 
                    className="text-accent hover:underline">abel-ekra.auroratech.be</a>
+                <div className="mt-3 text-xs text-muted-foreground">
+                  <p><strong>SEO:</strong> Designer graphique Côte d'Ivoire, portfolio créatif, développeur freelance Abidjan</p>
+                </div>
               </div>
               
               <div className="bg-white rounded-xl p-6 tech-shadow hover:scale-105 transition-all duration-300">
@@ -198,6 +207,9 @@ const Services = () => {
                 <h5 className="font-semibold text-primary mb-2">SaaS</h5>
                 <a href="https://quickjob-ci.auroratech.be" target="_blank" rel="noopener noreferrer" 
                    className="text-accent hover:underline">quickjob-ci.auroratech.be</a>
+                <div className="mt-3 text-xs text-muted-foreground">
+                  <p><strong>SEO:</strong> Emploi Côte d'Ivoire, offres d'emploi Abidjan, recrutement digital CI, plateforme job</p>
+                </div>
               </div>
               
               <div className="bg-white rounded-xl p-6 tech-shadow hover:scale-105 transition-all duration-300">
@@ -205,6 +217,9 @@ const Services = () => {
                 <h5 className="font-semibold text-primary mb-2">Landing page</h5>
                 <a href="https://anumeric.auroratech.be" target="_blank" rel="noopener noreferrer" 
                    className="text-accent hover:underline">anumeric.auroratech.be</a>
+                <div className="mt-3 text-xs text-muted-foreground">
+                  <p><strong>SEO:</strong> Transformation digitale Afrique, solutions numériques entreprises, consultancy tech</p>
+                </div>
               </div>
               
               <div className="bg-white rounded-xl p-6 tech-shadow hover:scale-105 transition-all duration-300">
@@ -214,6 +229,9 @@ const Services = () => {
                   <p className="text-muted-foreground">• GDES2024 (inscription thèse/master)</p>
                   <p className="text-muted-foreground">• ATTES.DID (attestations de réussite)</p>
                   <p className="text-muted-foreground">• PRINT2025 (relevés et attestations)</p>
+                </div>
+                <div className="mt-3 text-xs text-muted-foreground">
+                  <p><strong>SEO:</strong> Gestion académique Côte d'Ivoire, logiciel universitaire, applications éducatives</p>
                 </div>
               </div>
             </div>
