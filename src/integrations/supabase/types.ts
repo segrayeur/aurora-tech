@@ -80,6 +80,13 @@ export type Database = {
             referencedRelation: "talents"
             referencedColumns: ["id"]
           },
+          {
+            foreignKeyName: "reviews_talent_id_fkey"
+            columns: ["talent_id"]
+            isOneToOne: false
+            referencedRelation: "talents_public"
+            referencedColumns: ["id"]
+          },
         ]
       }
       talents: {
@@ -156,35 +163,74 @@ export type Database = {
       }
     }
     Views: {
-      public_profiles: {
+      talents_public: {
         Row: {
-          avatar_url: string | null
-          bio: string | null
+          category: Database["public"]["Enums"]["talent_category"] | null
+          city: string | null
+          country: string | null
           created_at: string | null
-          full_name: string | null
+          description: string | null
+          facebook_url: string | null
+          hourly_rate: number | null
           id: string | null
+          instagram_url: string | null
+          is_available: boolean | null
+          likes_count: number | null
+          portfolio_images: string[] | null
+          seo_keywords: string | null
+          skills: string[] | null
+          tiktok_url: string | null
+          title: string | null
           updated_at: string | null
           user_id: string | null
+          views_count: number | null
+          website_url: string | null
           whatsapp_number: string | null
         }
         Insert: {
-          avatar_url?: string | null
-          bio?: string | null
+          category?: Database["public"]["Enums"]["talent_category"] | null
+          city?: string | null
+          country?: string | null
           created_at?: string | null
-          full_name?: string | null
+          description?: string | null
+          facebook_url?: string | null
+          hourly_rate?: number | null
           id?: string | null
+          instagram_url?: string | null
+          is_available?: boolean | null
+          likes_count?: number | null
+          portfolio_images?: string[] | null
+          seo_keywords?: string | null
+          skills?: string[] | null
+          tiktok_url?: string | null
+          title?: string | null
           updated_at?: string | null
           user_id?: string | null
+          views_count?: number | null
+          website_url?: string | null
           whatsapp_number?: never
         }
         Update: {
-          avatar_url?: string | null
-          bio?: string | null
+          category?: Database["public"]["Enums"]["talent_category"] | null
+          city?: string | null
+          country?: string | null
           created_at?: string | null
-          full_name?: string | null
+          description?: string | null
+          facebook_url?: string | null
+          hourly_rate?: number | null
           id?: string | null
+          instagram_url?: string | null
+          is_available?: boolean | null
+          likes_count?: number | null
+          portfolio_images?: string[] | null
+          seo_keywords?: string | null
+          skills?: string[] | null
+          tiktok_url?: string | null
+          title?: string | null
           updated_at?: string | null
           user_id?: string | null
+          views_count?: number | null
+          website_url?: string | null
           whatsapp_number?: never
         }
         Relationships: []
